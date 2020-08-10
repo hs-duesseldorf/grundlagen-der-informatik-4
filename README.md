@@ -19,7 +19,15 @@
 
 ### Install Eclipse on Windows
 
+1. Download the Eclipse installer from [the official Eclipse website](https://www.eclipse.org/downloads/packages/installer) for Windows
+2. ...
+3. ...
+
 ### Install Eclipse on MacOS
+
+1. Download the Eclipse installer from [the official Eclipse website](https://www.eclipse.org/downloads/packages/installer) for Windows
+2. ...
+3. ...
 
 ### Install Eclipse on Ubuntu Linux
 
