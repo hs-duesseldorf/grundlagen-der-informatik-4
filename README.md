@@ -201,43 +201,42 @@ erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
 ### Tasks:
 1. Erstellen Sie das neue Projekt "Course3".
 2. Erstellen Sie sukzessive die Klassen KfzV0, Kfz und Lkw:
-1. Implementieren Sie die Klasse KfzV0 mit den öffentlichen Integer-Attributen
+3. Implementieren Sie die Klasse KfzV0 mit den öffentlichen Integer-Attributen
 sitze und tankInhalt und dem öffentlichen Float-Attribut verbrauch.
-2. Implementieren Sie das Programm KfzDemo.java mit einer main-Methode:
+4. Implementieren Sie das Programm KfzDemo.java mit einer main-Methode:
    - Die Instanz minivan wird von der Klasse KfzV0 erzeugt.
    - Die Attribute werden mit sitze = 6, tankInhalt = 70, verbrauch = 14 initialisiert.
    - Die mögliche Reichweite bei vollem Tank wird ausgerechnet und mit
    System.out.println ausgegeben.
-3. Erstellen Sie ausgehend von KfzDemo.java die Klasse ZweiKfz.java:
+5. Erstellen Sie ausgehend von KfzDemo.java die Klasse ZweiKfz.java:
    - Zusätzlich zur minivan Instanz wird eine Instanz sportwagen von der Klasse KfzV0 erzeugt.
    - Die Attribute von sportwagen werden mit sitze = 2, tankInhalt = 45, verbrauch = 11 initialisiert.
    - Die mögliche Reichweite von sportwagen bei vollem Tank wird ausgerechnet und mittels System.out.println ausgegeben.
-4. Erweitern Sie die Klasse KfzV0 um die Methode reichweite(), die die Reichweite als Rückgabewert liefert.
-5. Erstellen Sie die Klasse ReturnDemo.java:
+6. Erweitern Sie die Klasse KfzV0 um die Methode reichweite(), die die Reichweite als Rückgabewert liefert.
+7. Erstellen Sie die Klasse ReturnDemo.java:
    - Die Ausgabe der Reichweite erfolgt in der main-Methode, wobei die Methode
    reichweite() genutzt wird.
-6. Die Klasse KfzV0 wird um die Methode spritVerbrauch(int km) erweitert.
+8. Die Klasse KfzV0 wird um die Methode spritVerbrauch(int km) erweitert.
    - Die Methode hat als Eingabeparameter eine Entfernung in Kilometern.
    - Sie berechnet den entsprechenden Spritverbrauch für die Entfernung.
    - Der Spritverbrauch wird als float-Ergebnis zurückgegeben.
-7. Erstellen Sie ausgehend von ReturnDemo.java die Klasse SpritDemo.java:
+9. Erstellen Sie ausgehend von ReturnDemo.java die Klasse SpritDemo.java:
    - Die Methode spritVerbrauch wird in der main-Methode für die Entfernung 252 km aufgerufen und die Ergebnisse für die beiden Instanzen ausgegeben.
-8. Erstellen Sie ausgehend von KfzV0.java die Klasse Kfz. Die neue Klasse Kfz wird um den Konstruktor Kfz(int sitze, int tankInhalt, float verbrauch) erweitert. Zusätzlich werden alle Attribute auf privat gesetzt.
-9. Erstellen Sie ausgehend von SpritDemo.java die Klasse KonstruktorDemo.java:
-   - Die Attribute werden über den Konstruktor Kfz initialisiert.
-10. Die Klasse Lkw wird von Kfz abgeleitet (Vererbung):•
-Sie hat die beiden zusätzlichen Attribute int ladeFlaeche und boolean
-hatAnhaenger.
+10. Erstellen Sie ausgehend von KfzV0.java die Klasse Kfz. Die neue Klasse Kfz wird um den Konstruktor Kfz(int sitze, int tankInhalt, float verbrauch) erweitert. Zusätzlich werden alle Attribute auf privat gesetzt.
+11. Erstellen Sie ausgehend von SpritDemo.java die Klasse KonstruktorDemo.java:
+    - Die Attribute werden über den Konstruktor Kfz initialisiert.
+12.  Die Klasse Lkw wird von Kfz abgeleitet (Vererbung):
+    - Sie hat die beiden zusätzlichen Attribute int ladeFlaeche und boolean hatAnhaenger.
     - Der Konstruktor Lkw initialisiert alle Attribute.
     - Die Lkw-Methode spritVerbrauch addiert immer einen Liter zum errechneten Verbrauch hinzu.
-11. Implementieren Sie das Programm LkwDemo.java mit:
+13. Implementieren Sie das Programm LkwDemo.java mit:
     - Einer Instanz sportWagen der Klasse Kfz und einer Instanz magirus der Klasse
     Lkw.
     - Die magirus-Instanz hat die gleichen Attribute wie die sportwagen-Instanz (nur
     zur Demo).
     - Weisen Sie der zusätzlichen Kfz-Variable kfz (keine Instanziierung)
-    nacheinander sportWagen und m
-
+    nacheinander sportWagen und magirus zu und geben Sie jeweils den Verbrauch auf 252 km aus.
+    
 ## Course 04
 
 ### Topic
