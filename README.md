@@ -10,13 +10,19 @@
       - [Install Eclipse on Ubuntu Linux](#install-eclipse-on-ubuntu-linux)
   - [Course 01](#course-01)
     - [Topics](#topics)
-    - [Exercises](#exercises)
+    - [Tasks](#tasks)
       - [Simple "Hello-Java-App"](#simple-hello-java-app)
       - [Hello World Eclipse tutorial](#hello-world-eclipse-tutorial)
       - [JavaFX graphical user interface app](#javafx-graphical-user-interface-app)
   - [Course 02](#course-02)
-  - [Course 03](#course-03)
+    - [Learning goals](#learning-goals)
+    - [Tasks](#tasks-1)
+  - [Course 03 (Currently German only)](#course-03-currently-german-only)
+    - [Topic:](#topic)
+    - [Tasks:](#tasks-2)
   - [Course 04](#course-04)
+    - [Topic](#topic-1)
+    - [Tasks](#tasks-3)
 
 # Software Engineering 1
 
@@ -97,7 +103,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 1. Create, compile and run a simple "Hello World" java application.
 2. Create, compile and run a java application with a simple JavaFX graphical user interface with Eclipse.
 
-### Exercises
+### Tasks
 
 #### Simple "Hello-Java-App"
 
@@ -161,6 +167,89 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 ## Course 02
 
-## Course 03
+### Learning goals
+
+1. Transfer your C knowledge to Java.
+2. Implement the Algorithms ```FourOutOfSixCoins``` and ```VariableCoins```
+
+### Tasks
+
+1. Create the Java project "Course2"
+2. Create the application ```FourOutOfSixCoins```:
+    - There are 6 given coins
+    - Print out each possible combination
+    - Print out the total number of combinations
+3. Create the application ```VariableCoins```:
+   - Set global integer variables ```MAX``` and ```SUB```
+   - There are ```MAX``` given coins
+   - Print out every combination of ```SUB``` coins
+   - Print out the total number of combinations
+
+## Course 03 (Currently German only)
+
+### Topic:
+Einstieg in die Objektorientierung: Die Klassen Kfz und Lkw werden erstellt, wobei die
+Grundprinzipien der Objektorientierung sukzessive einfließen. Dies bedeutet, dass wir mit
+einer "schlechten" Klasse KfzV0 anfangen und diese ständig verbessern, bis wir schließlich
+eine "schöne" Klasse Kfz erhalten.
+Hierzu werden im Folgenden zwei Arten von Klassen erstellt. KfzV0, Kfz und Lkw sollen zur
+Instanziierung von Objekten dienen und lediglich Attribute besitzen und Methoden zur
+Verfügung stellen.
+Die Demo-Klassen sollen genutzt werden, um einzelne Instanzen der Kfz Klassen zu
+erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
+
+### Tasks:
+1. Erstellen Sie das neue Projekt "Course3".
+2. Erstellen Sie sukzessive die Klassen KfzV0, Kfz und Lkw:
+1. Implementieren Sie die Klasse KfzV0 mit den öffentlichen Integer-Attributen
+sitze und tankInhalt und dem öffentlichen Float-Attribut verbrauch.
+2. Implementieren Sie das Programm KfzDemo.java mit einer main-Methode:
+   - Die Instanz minivan wird von der Klasse KfzV0 erzeugt.
+   - Die Attribute werden mit sitze = 6, tankInhalt = 70, verbrauch = 14 initialisiert.
+   - Die mögliche Reichweite bei vollem Tank wird ausgerechnet und mit
+   System.out.println ausgegeben.
+3. Erstellen Sie ausgehend von KfzDemo.java die Klasse ZweiKfz.java:
+   - Zusätzlich zur minivan Instanz wird eine Instanz sportwagen von der Klasse KfzV0 erzeugt.
+   - Die Attribute von sportwagen werden mit sitze = 2, tankInhalt = 45, verbrauch = 11 initialisiert.
+   - Die mögliche Reichweite von sportwagen bei vollem Tank wird ausgerechnet und mittels System.out.println ausgegeben.
+4. Erweitern Sie die Klasse KfzV0 um die Methode reichweite(), die die Reichweite als Rückgabewert liefert.
+5. Erstellen Sie die Klasse ReturnDemo.java:
+   - Die Ausgabe der Reichweite erfolgt in der main-Methode, wobei die Methode
+   reichweite() genutzt wird.
+6. Die Klasse KfzV0 wird um die Methode spritVerbrauch(int km) erweitert.
+   - Die Methode hat als Eingabeparameter eine Entfernung in Kilometern.
+   - Sie berechnet den entsprechenden Spritverbrauch für die Entfernung.
+   - Der Spritverbrauch wird als float-Ergebnis zurückgegeben.
+7. Erstellen Sie ausgehend von ReturnDemo.java die Klasse SpritDemo.java:
+   - Die Methode spritVerbrauch wird in der main-Methode für die Entfernung 252 km aufgerufen und die Ergebnisse für die beiden Instanzen ausgegeben.
+8. Erstellen Sie ausgehend von KfzV0.java die Klasse Kfz. Die neue Klasse Kfz wird um den Konstruktor Kfz(int sitze, int tankInhalt, float verbrauch) erweitert. Zusätzlich werden alle Attribute auf privat gesetzt.
+9. Erstellen Sie ausgehend von SpritDemo.java die Klasse KonstruktorDemo.java:
+   - Die Attribute werden über den Konstruktor Kfz initialisiert.
+10. Die Klasse Lkw wird von Kfz abgeleitet (Vererbung):•
+Sie hat die beiden zusätzlichen Attribute int ladeFlaeche und boolean
+hatAnhaenger.
+    - Der Konstruktor Lkw initialisiert alle Attribute.
+    - Die Lkw-Methode spritVerbrauch addiert immer einen Liter zum errechneten Verbrauch hinzu.
+11. Implementieren Sie das Programm LkwDemo.java mit:
+    - Einer Instanz sportWagen der Klasse Kfz und einer Instanz magirus der Klasse
+    Lkw.
+    - Die magirus-Instanz hat die gleichen Attribute wie die sportwagen-Instanz (nur
+    zur Demo).
+    - Weisen Sie der zusätzlichen Kfz-Variable kfz (keine Instanziierung)
+    nacheinander sportWagen und m
 
 ## Course 04
+
+### Topic
+
+Graphical user interface (GUI) visualizing a lottery drawing.
+
+### Tasks
+
+1. Create the Java project ```Course4```
+2. Create a GUI which consists of 6 textfields for integers and one "Draw" button. Fill the textfields with random numbers between 1 and 49 via ```Math.random()```.
+3. Extend the application with the following features:
+    - No number is drawn more than 1 time
+    - All numbers are sorted ascending from left to right
+
+![lotto](images/21_lotto.png)
