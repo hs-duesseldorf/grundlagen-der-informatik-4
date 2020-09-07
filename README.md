@@ -256,7 +256,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 ### Tasks
 
-1. Create the Maven project "se1c2"
+1. Create the ***Maven*** project `se1c2` by using the archetype `javafx-archetype-simple` from `org.openjfx`
 2. Create the application ```FourOutOfSixCoins```:
     - There are 6 given coins
     - Print out each possible combination
@@ -281,7 +281,7 @@ Die Demo-Klassen sollen genutzt werden, um einzelne Instanzen der Kfz Klassen zu
 erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
 
 ### Tasks:
-1. Erstellen Sie das neue Java Projekt "se1c3".
+1. Erstellen Sie das neue Java Projekt `se1c3`.
 2. Erstellen Sie sukzessive die Klassen KfzV0, Kfz und Lkw:
 3. Implementieren Sie die Klasse KfzV0 mit den öffentlichen Integer-Attributen
 sitze und tankInhalt und dem öffentlichen Float-Attribut verbrauch.
@@ -327,8 +327,8 @@ Graphical user interface (GUI) visualizing a lottery drawing.
 
 ### Tasks
 
-1. Create the Maven project ```se1c4```
-2. Create a GUI which consists of 6 textfields for integers and one "Draw" button. Fill the textfields with random numbers between 1 and 49 via ```Math.random()```.
+1. Create the Maven project ```se1c4``` by using the archetype `javafx-archetype-simple` from `org.openjfx`
+2. Replace the Code in `App.java` and create a GUI which consists of 6 `TextField`s and one "Draw" `Button`. Fill the `TextField`s with random numbers between 1 and 49 via ```Math.random()```.
 3. Extend the application with the following features:
     - No number is drawn more than 1 time
     - All numbers are sorted ascending from left to right
