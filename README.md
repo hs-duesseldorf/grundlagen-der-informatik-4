@@ -89,7 +89,7 @@ WIP
     ![](images/30_install_javafx_libs_04.png)
 
 6. Navigate to the directory where you've extracted the ZIP-archive to and click your way to the **lib-directory**
-7. Hold the shift button, then left click to select all files except the **src** ZIP - do NOT select the **src* ZIP
+7. Hold the shift button, then left click to select all files except the **src** ZIP - do NOT select the **src** ZIP
 
     ![](images/31_install_javafx_libs_05.png)
 
