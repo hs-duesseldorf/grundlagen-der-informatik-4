@@ -198,23 +198,23 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
     ![](images/23_eclipse_new_maven.png)
 
-2.Leave everything as it is and click on "Next"
+2. Leave everything as it is and click on "Next"
 
-    ![24_eclipse_new_maven_02](images/24_eclipse_new_maven_02.png)
+   ![24_eclipse_new_maven_02](images/24_eclipse_new_maven_02.png) 
 
-1. Click in the search filter, type "javafx", scroll to the end and select `javafx-archetype-simple` from `org.openjfx`
+3. Click in the search filter, type "javafx", scroll to the end and select `javafx-archetype-simple` from `org.openjfx`
 
     ![](images/25_eclipse_new_maven_03.png)
 
-2. Enter the Group id `org.hsd.inflab`, Artifact Id `se1c1`
+4. Enter the Group id `org.hsd.inflab`, Artifact Id `se1c1`
 
     ![](images/26_eclipse_new_maven_04.png)
 
-3. Open the package `src/main/java`, right-click `App.java` -> hover on "Run as" click on "Java Application"
+5. Open the package `src/main/java`, right-click `App.java` -> hover on "Run as" click on "Java Application"
 
     ![](images/26_eclipse_new_maven_05.png)
 
-4. Insert the following code into `App.java` to create a window with a button that prints "Hello World" to the terminal when you click it:
+6. Insert the following code into `App.java` to create a window with a button that prints "Hello World" to the terminal when you click it:
     ```java
     public class App extends Application {
 
@@ -243,7 +243,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
     }
     ```
 
-5. Run your `App.java` again
+6. Run your `App.java` again
    
 ![javafx_hello_world](images/20_eclipse_javafx_hello_world.png)
 
