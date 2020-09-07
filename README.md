@@ -98,7 +98,7 @@ WIP
 
     ![](images/32_install_javafx_libs_06.png)
 
-8. Navigate to `C:\Program Files\AdoptOpenJDK\jdk-11.0.8-hotspot\lib` and paste your copied files into this **lib** directory by either righ-click->paste or pressing CTRL + V on your keyboard
+8. Navigate to `C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\lib` (the version number might be different by the time you work through this tutorial) and paste your copied files into this **lib** directory by either righ-click->paste or pressing CTRL + V on your keyboard
 
     ![](images/33_install_javafx_libs_07.png)
 
