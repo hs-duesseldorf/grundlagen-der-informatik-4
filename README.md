@@ -98,7 +98,7 @@ WIP
 
     ![](images/32_install_javafx_libs_06.png)
 
-8. Navigate to `C:\Program Files\AdoptOpenJDK\jdk-11.0.8.hotspot\lib` and paste your copied files into this **lib** directory by either righ-click->paste or pressing CTRL + V on your keyboard
+8. Navigate to `C:\Program Files\AdoptOpenJDK\jdk-11.0.8-hotspot\lib` and paste your copied files into this **lib** directory by either righ-click->paste or pressing CTRL + V on your keyboard
 
     ![](images/33_install_javafx_libs_07.png)
 
@@ -189,23 +189,32 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 2. Click on "Create a Hello World application"
 
     ![](images/19_eclipse_hello_world.png)
-    
+
 3. Follow the guide on the right side of your screen to create the Hello World application and run it.
 
 #### JavaFX graphical user interface app
 
-1. Create a new Maven Project from the maven archetype `javafx-archetype-simple` from `org.openjfx`
-   
+1. Click on "Create a new **project**" (not "Java project"!!!), expand the the directory `Maven` and select `Maven project` - then click on "Next >"
+
     ![](images/23_eclipse_new_maven.png)
-    ![](images/24_eclipse_new_maven_02.png)
+
+2.Leave everything as it is and click on "Next"
+
+    ![24_eclipse_new_maven_02](images/24_eclipse_new_maven_02.png)
+
+1. Click in the search filter, type "javafx", scroll to the end and select `javafx-archetype-simple` from `org.openjfx`
+
     ![](images/25_eclipse_new_maven_03.png)
+
+2. Enter the Group id `org.hsd.inflab`, Artifact Id `se1c1`
+
     ![](images/26_eclipse_new_maven_04.png)
 
-2. Right-click `App.java` -> hover on "Run as..." click on "Run as Java Application"
+3. Open the package `src/main/java`, right-click `App.java` -> hover on "Run as" click on "Java Application"
 
     ![](images/26_eclipse_new_maven_05.png)
 
-3. Insert the following code into `App.java` to create a window with a button that prints "Hello World" to the terminal when you click it:
+4. Insert the following code into `App.java` to create a window with a button that prints "Hello World" to the terminal when you click it:
     ```java
     public class App extends Application {
 
@@ -234,7 +243,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
     }
     ```
 
-4. Run your `App.java` again
+5. Run your `App.java` again
    
 ![javafx_hello_world](images/20_eclipse_javafx_hello_world.png)
 
@@ -247,7 +256,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 ### Tasks
 
-1. Create the Java project "Course2"
+1. Create the Maven project "se1c2"
 2. Create the application ```FourOutOfSixCoins```:
     - There are 6 given coins
     - Print out each possible combination
@@ -272,7 +281,7 @@ Die Demo-Klassen sollen genutzt werden, um einzelne Instanzen der Kfz Klassen zu
 erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
 
 ### Tasks:
-1. Erstellen Sie das neue Projekt "Course3".
+1. Erstellen Sie das neue Java Projekt "se1c3".
 2. Erstellen Sie sukzessive die Klassen KfzV0, Kfz und Lkw:
 3. Implementieren Sie die Klasse KfzV0 mit den öffentlichen Integer-Attributen
 sitze und tankInhalt und dem öffentlichen Float-Attribut verbrauch.
@@ -318,7 +327,7 @@ Graphical user interface (GUI) visualizing a lottery drawing.
 
 ### Tasks
 
-1. Create the Java project ```Course4```
+1. Create the Maven project ```se1c4```
 2. Create a GUI which consists of 6 textfields for integers and one "Draw" button. Fill the textfields with random numbers between 1 and 49 via ```Math.random()```.
 3. Extend the application with the following features:
     - No number is drawn more than 1 time
