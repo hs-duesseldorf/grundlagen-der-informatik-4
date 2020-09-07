@@ -120,14 +120,22 @@ WIP
 #### Install Eclipse on Windows
 
 1. Download the Eclipse installer from [the official Eclipse website](https://www.eclipse.org/downloads/packages/installer) for Windows
-![](images/12_download_eclipse_installer.png)
+
+    ![](images/12_download_eclipse_installer.png)
+
 2. Run the Eclipse installer from your Windows Explorer:
-![](images/13_run_eclipse_installer_1.png)
+
+    ![](images/13_run_eclipse_installer_1.png)
+
 2. Click through the installer to install Eclipse:
-![](images/14_run_eclipse_installer_2.png)
-![](images/15_run_eclipse_installer_3.png)
-![](images/16_run_eclipse_installer_4.png)
-![](images/17_run_eclipse_installer_5.png)
+
+    ![](images/14_run_eclipse_installer_2.png)
+
+    ![](images/15_run_eclipse_installer_3.png)
+
+    ![](images/16_run_eclipse_installer_4.png)
+    
+    ![](images/17_run_eclipse_installer_5.png)
 
 
 
