@@ -56,7 +56,7 @@
 
 #### Install Java on MacOS
 
-1. Download Adopt openJDK version from: https://adoptopenjdk.net/
+WIP
 
 #### Install Java on Ubuntu Linux
 
@@ -89,20 +89,22 @@
     ![](images/30_install_javafx_libs_04.png)
 
 6. Navigate to the directory where you've extracted the ZIP-archive to and click your way to the **lib-directory**
+7. Hold the shift button, then left click to select all files except the **src** ZIP - do NOT select the **src* ZIP
 
     ![](images/31_install_javafx_libs_05.png)
 
-7. Hold the shift button, then left click to select all files except the **src** ZIP - do NOT select the **src* ZIP
    
-8. Check that all files except the src zip are marked and then copy them with either right-click->copy or pressing CTRL + C
+7. Check that all files except the src zip are marked and then copy them with either right-click->copy or pressing CTRL + C
 
     ![](images/32_install_javafx_libs_06.png)
 
-9. Navigate to `C:\Program Files\AdoptOpenJDK\jdk-11.0.8.hotspot\lib` and paste your copied files into this **lib** directory by either righ-click->paste or pressing CTRL + V on your keyboard
+8. Navigate to `C:\Program Files\AdoptOpenJDK\jdk-11.0.8.hotspot\lib` and paste your copied files into this **lib** directory by either righ-click->paste or pressing CTRL + V on your keyboard
 
     ![](images/33_install_javafx_libs_07.png)
 
 ## Install JavaFX on MacOS
+
+WIP
 
 ## Install JavaFX on Ubuntu Linux
 
@@ -131,13 +133,11 @@
 
 #### Install Eclipse on MacOS
 
-1. Download the Eclipse installer from [the official Eclipse website](https://www.eclipse.org/downloads/packages/installer) for MacOs
-2. ...
-3. ...
+WIP
 
 #### Install Eclipse on Ubuntu Linux
 
-If you like you can also run the Eclipse installer wizard on Ubuntu linux from https://www.eclipse.org/downloads/packages/installer or if you want to have an auto-updating Eclipse that might be not always updated with the most up to date version you can use the Eclipse snap either from https://snapcraft.io/eclipse or from the terminal like so:
+If you like you can also run the Eclipse installer wizard on Ubuntu linux from https://www.eclipse.org/downloads/packages/installer or ...
 
 1. Open a terminal with **CTRL + ALT + T**
 2. Run the following command:
