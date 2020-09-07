@@ -187,7 +187,9 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 1. Open Eclipse
 2. Click on "Create a Hello World application"
+
     ![](images/19_eclipse_hello_world.png)
+    
 3. Follow the guide on the right side of your screen to create the Hello World application and run it.
 
 #### JavaFX graphical user interface app
