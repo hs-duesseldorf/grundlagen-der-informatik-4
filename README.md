@@ -4,6 +4,10 @@
       - [Install Java on Windows](#install-java-on-windows)
       - [Install Java on MacOS](#install-java-on-macos)
       - [Install Java on Ubuntu Linux](#install-java-on-ubuntu-linux)
+    - [Install JavaFX](#install-javafx)
+  - [Install JavaFX on Windows](#install-javafx-on-windows)
+  - [Install JavaFX on MacOS](#install-javafx-on-macos)
+  - [Install JavaFX on Ubuntu Linux](#install-javafx-on-ubuntu-linux)
     - [Install Eclipse](#install-eclipse)
       - [Install Eclipse on Windows](#install-eclipse-on-windows)
       - [Install Eclipse on MacOS](#install-eclipse-on-macos)
@@ -61,6 +65,52 @@
 
     ```bash
     sudo apt install default-jdk
+    ```
+
+### Install JavaFX
+
+## Install JavaFX on Windows
+
+1. Open your browser and navigate to https://gluonhq.com/products/javafx/
+2. Click on the green Download-Button for JavaFX Windows SDK
+
+    ![](images/27_install_javafx_libs_01.png)
+
+3. Navigate to the directory where you've downloaded the ZIP to
+
+    ![](images/28_install_javafx_libs_02.png)
+
+4. Right click and extract
+
+    ![](images/29_install_javafx_libs_03.png)
+
+5. Select a directory to extract
+
+    ![](images/30_install_javafx_libs_04.png)
+
+6. Navigate to the directory where you've extracted the ZIP-archive to and click your way to the **lib-directory**
+
+    ![](images/31_install_javafx_libs_05.png)
+
+7. Hold the shift button, then left click to select all files except the **src** ZIP - do NOT select the **src* ZIP
+   
+8. Check that all files except the src zip are marked and then copy them with either right-click->copy or pressing CTRL + C
+
+    ![](images/32_install_javafx_libs_06.png)
+
+9. Navigate to `C:\Program Files\AdoptOpenJDK\jdk-11.0.8.hotspot\lib` and paste your copied files into this **lib** directory by either righ-click->paste or pressing CTRL + V on your keyboard
+
+    ![](images/33_install_javafx_libs_07.png)
+
+## Install JavaFX on MacOS
+
+## Install JavaFX on Ubuntu Linux
+
+1. Open a new terminal (CTRL + ALT + T)
+2. run the following command to install javafx
+
+    ```bash
+    sudo apt install openjfx
     ```
 
 ### Install Eclipse
@@ -134,8 +184,18 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 #### JavaFX graphical user interface app
 
-1. Create a new JavaFX Project and name your main Class ```App.java```
-2. Insert the following code to create a window with a button that prints "Hello World" to the terminal when you click it:
+1. Create a new Maven Project from the maven archetype `javafx-archetype-simple` from `org.openjfx`
+   
+    ![](images/23_eclipse_new_maven.png)
+    ![](images/24_eclipse_new_maven_02.png)
+    ![](images/25_eclipse_new_maven_03.png)
+    ![](images/26_eclipse_new_maven_04.png)
+
+2. Right-click `App.java` -> hover on "Run as..." click on "Run as Java Application"
+
+    ![](images/26_eclipse_new_maven_05.png)
+
+3. Insert the following code into `App.java` to create a window with a button that prints "Hello World" to the terminal when you click it:
     ```java
     public class App extends Application {
 
@@ -163,6 +223,9 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
     }
     ```
+
+4. Run your `App.java` again
+   
 ![javafx_hello_world](images/20_eclipse_javafx_hello_world.png)
 
 ## Course 02
