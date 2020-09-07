@@ -173,7 +173,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
         }
     }
     ```
-2. Open a command line interface (Windows: Windows-Key + R -> Type "Cmd.exe", press enter, Ubuntu: CTRL + SHIFT + T, MacOs: search for "Terminal") and navigate to the location where you saved your Java Code with:
+2. Open a command line interface (Windows: Windows-Key + R -> Type `Cmd.exe`, press enter, Ubuntu: CTRL + SHIFT + T, MacOs: search for `Terminal`) and navigate to the location where you saved your Java Code with:
     ```bash
     cd PATH_TO_YOU_FILE
     ```
@@ -186,7 +186,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 #### Hello World Eclipse tutorial
 
 1. Open Eclipse
-2. Click on "Create a Hello World application"
+2. Click on `Create a Hello World application`
 
     ![](images/19_eclipse_hello_world.png)
 
@@ -194,15 +194,15 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 #### JavaFX graphical user interface app
 
-1. Click on "Create a new **project**" (not "Java project"!!!), expand the the directory `Maven` and select `Maven project` - then click on "Next >"
+1. Click on `Create a new project...` (not `Java project`!!!), expand the the directory `Maven` and select `Maven project` - then click on `Next >`
 
     ![](images/23_eclipse_new_maven.png)
 
-2. Leave everything as it is and click on "Next"
+2. Leave everything as it is and click on `Next`
 
    ![24_eclipse_new_maven_02](images/24_eclipse_new_maven_02.png) 
 
-3. Click in the search filter, type "javafx", scroll to the end and select `javafx-archetype-simple` from `org.openjfx`
+3. Click in the search filter, type `javafx`, scroll to the end and select `javafx-archetype-simple` from `org.openjfx`
 
     ![](images/25_eclipse_new_maven_03.png)
 
@@ -210,12 +210,20 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
     ![](images/26_eclipse_new_maven_04.png)
 
-5. Open the package `src/main/java`, right-click `App.java` -> hover on "Run as" click on "Java Application"
+5. Open the package `src/main/java`, right-click `App.java` -> hover on `Run as` click on `Java Application`
 
     ![](images/26_eclipse_new_maven_05.png)
 
-6. Insert the following code into `App.java` to create a window with a button that prints "Hello World" to the terminal when you click it:
+6. Replace the the ***whole*** code in `App.java` with the following code to create a window with a button that prints `Hello World` to the terminal when you click it:
     ```java
+    package org.hsd.inflab.se1c1;
+
+    import javafx.application.Application;
+    import javafx.scene.Scene;
+    import javafx.scene.control.Button;
+    import javafx.scene.layout.BorderPane;
+    import javafx.stage.Stage;
+
     public class App extends Application {
 
         @Override
@@ -243,7 +251,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
     }
     ```
 
-6. Run your `App.java` again
+7. Run your `App.java` again
    
 ![javafx_hello_world](images/20_eclipse_javafx_hello_world.png)
 
