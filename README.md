@@ -69,7 +69,7 @@ WIP
 
 ### Install JavaFX
 
-## Install JavaFX on Windows
+#### Install JavaFX on Windows
 
 1. Open your browser and navigate to https://gluonhq.com/products/javafx/
 2. Click on the green Download-Button for JavaFX Windows SDK
@@ -102,11 +102,11 @@ WIP
 
     ![](images/33_install_javafx_libs_07.png)
 
-## Install JavaFX on MacOS
+#### Install JavaFX on MacOS
 
 WIP
 
-## Install JavaFX on Ubuntu Linux
+#### Install JavaFX on Ubuntu Linux
 
 1. Open a new terminal (CTRL + ALT + T)
 2. run the following command to install javafx
@@ -264,16 +264,16 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 ### Tasks
 
-1. Create the ***Maven*** project `se1c2` by using the archetype `javafx-archetype-simple` from `org.openjfx`
+1. Create the ***Java*** project `se1c2`
 2. Create the application ```FourOutOfSixCoins```:
     - There are 6 given coins
     - Print out each possible combination
-    - Print out the total number of combinations
+    - Print out the total number of combinations in the terminal
 3. Create the application ```VariableCoins```:
    - Set global integer variables ```MAX``` and ```SUB```
    - There are ```MAX``` given coins
    - Print out every combination of ```SUB``` coins
-   - Print out the total number of combinations
+   - Print out the total number of combinations in the terminal
 
 ## Course 03 (Currently German only)
 
