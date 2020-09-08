@@ -194,7 +194,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 #### JavaFX graphical user interface app
 
-1. Click on `Create a new project...` (not `Java project`!!!), expand the the directory `Maven` and select `Maven project` - then click on `Next >`
+1. Click on `Create a project...` (**not** `Create a Java project`!!!), expand the the directory `Maven` and select `Maven project` - then click on `Next >`
 
     ![](images/23_eclipse_new_maven.png)
 
