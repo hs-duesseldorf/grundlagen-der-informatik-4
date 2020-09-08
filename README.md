@@ -214,7 +214,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
     ![](images/26_eclipse_new_maven_05.png)
 
-6. Replace the the ***whole*** code in `App.java` with the following code to create a window with a button that prints `Hello World` to the terminal when you click it:
+6. Replace the the ***whole*** code in `App.java` with the following code to create a window with a button that prints `Hello Java!` to the terminal when you click it:
     ```java
     package org.hsd.inflab.se1c1;
 
