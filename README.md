@@ -30,14 +30,14 @@
 
 # Software Engineering 1
 
-## Java & Eclipse Tutorial
+## Java 11 & Eclipse Tutorial
 
-### Install Java
+### Install Java 11
 
-#### Install Java on Windows
+#### Install Java 11 on Windows
 
 1. Open https://adoptopenjdk.net  in your browser
-2. Download and run the adopt open JDK installation wizard
+2. Download and run the adopt open JDK 11 installation wizard
 ![01_download_adopt_openjdk](images/01_download_adopt_openjdk.png)
 
 3. Click through the adopt open jdk wizard:  
@@ -54,11 +54,11 @@
 ![10_verify_java_2](images/10_verify_java_2.png)
 ![11_verify_java_3](images/11_verify_java_3.png)
 
-#### Install Java on MacOS
+#### Install Java 11 on MacOS
 
 WIP
 
-#### Install Java on Ubuntu Linux
+#### Install Java 11 on Ubuntu Linux
 
 1. Open a terminal with **CTRL + ALT + T**
 2. Run the following command:
