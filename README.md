@@ -13,19 +13,18 @@
       - [Install Eclipse on MacOS](#install-eclipse-on-macos)
       - [Install Eclipse on Ubuntu Linux](#install-eclipse-on-ubuntu-linux)
   - [Course 01](#course-01)
-    - [Topics](#topics)
+    - [Task overview](#task-overview)
     - [Tasks](#tasks)
-      - [Simple "Hello-Java-App"](#simple-hello-java-app)
-      - [Hello World Eclipse tutorial](#hello-world-eclipse-tutorial)
-      - [JavaFX graphical user interface app](#javafx-graphical-user-interface-app)
+      - [Task 1 - Simple "Hello-Java-App"](#task-1---simple-hello-java-app)
+      - [Task 2 - Hello World Eclipse tutorial](#task-2---hello-world-eclipse-tutorial)
+      - [Task 3 - JavaFX graphical user interface app](#task-3---javafx-graphical-user-interface-app)
   - [Course 02](#course-02)
-    - [Learning goals](#learning-goals)
     - [Tasks](#tasks-1)
   - [Course 03 (Currently German only)](#course-03-currently-german-only)
-    - [Topic:](#topic)
+    - [Topic: "Einstieg in die Objektorientierung"](#topic-einstieg-in-die-objektorientierung)
     - [Tasks:](#tasks-2)
   - [Course 04](#course-04)
-    - [Topic](#topic-1)
+    - [Topic](#topic)
     - [Tasks](#tasks-3)
 
 # Software Engineering 1
@@ -156,14 +155,15 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 ## Course 01
 
-### Topics
+### Task overview
 
 1. Create, compile and run a simple "Hello World" java application.
-2. Create, compile and run a java application with a simple JavaFX graphical user interface with Eclipse.
+2. Use the Eclipse "Hello World" to get used to Eclipse *Java* Projects.
+3. Create, compile and run a java application with a simple JavaFX graphical user interface with Eclipse via a *Maven* Project
 
 ### Tasks
 
-#### Simple "Hello-Java-App"
+#### Task 1 - Simple "Hello-Java-App"
 
 1. Open a simple text editor (Windows Notepad, Ubuntu Gedit or MacOs TextEdit) enter the following code and save it as ```Hello.java``` to your desired location:
     ```java
@@ -183,7 +183,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
     java Hello
     ```
 
-#### Hello World Eclipse tutorial
+#### Task 2 - Hello World Eclipse tutorial
 
 1. Open Eclipse
 2. Click on `Create a Hello World application`
@@ -192,7 +192,13 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 3. Follow the guide on the right side of your screen to create the Hello World application and run it.
 
-#### JavaFX graphical user interface app
+**ATTENTION!!!**
+
+In the following frame, click on ***Don't Create***, to skip the module description.
+
+![](images/34_do_not_create_module.png)
+
+#### Task 3 - JavaFX graphical user interface app
 
 1. Click on `Create a project...` (**not** `Create a Java project`!!!), expand the the directory `Maven` and select `Maven project` - then click on `Next >`
 
@@ -257,11 +263,6 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 ## Course 02
 
-### Learning goals
-
-1. Transfer your C knowledge to Java.
-2. Implement the Algorithms ```FourOutOfSixCoins``` and ```VariableCoins```
-
 ### Tasks
 
 1. Create the ***Java*** project `se1c2`
@@ -277,8 +278,8 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
 ## Course 03 (Currently German only)
 
-### Topic:
-Einstieg in die Objektorientierung: Die Klassen Kfz und Lkw werden erstellt, wobei die
+### Topic: "Einstieg in die Objektorientierung"
+Die Klassen Kfz und Lkw werden erstellt, wobei die
 Grundprinzipien der Objektorientierung sukzessive einfließen. Dies bedeutet, dass wir mit
 einer "schlechten" Klasse KfzV0 anfangen und diese ständig verbessern, bis wir schließlich
 eine "schöne" Klasse Kfz erhalten.
