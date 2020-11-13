@@ -55,7 +55,13 @@
 
 #### Install Java 11 on MacOS
 
-WIP
+1. Open https://adoptopenjdk.net  in your browser
+2. Download and run the adopt open JDK 11 installation wizard
+![](images/35_macos_adoptopenjdk_1.png)
+![](images/36_macos_adoptopenjdk_2.png)
+![](images/37_macos_adoptopenjdk_3.png)
+3. Verify that java has been installed successfully by running the command `java -version` in your MacOS **Terminal** command line interface:
+![](images/38_macos_adoptopenjdk_4.png)
 
 #### Install Java 11 on Ubuntu Linux
 
@@ -103,7 +109,7 @@ WIP
 
 #### Install JavaFX on MacOS
 
-WIP
+You don't need to install JavaFX on MacOS if you've installed AdoptOpenJDK from above, and use Maven Projects to create JavaFX Applications.
 
 #### Install JavaFX on Ubuntu Linux
 
@@ -140,7 +146,25 @@ WIP
 
 #### Install Eclipse on MacOS
 
-WIP
+1. Download the Eclipse installer from [the official Eclipse website](https://www.eclipse.org/downloads/) for MacOs
+   
+    ![](images/39_macos_eclipse_1.png)
+
+2. Open the Eclipse .dmg from your downloads
+
+    ![](images/41_macos_eclipse_3.png)
+
+3. Confirm opening
+
+    ![](images/42_macos_eclipse_4.png)
+
+4. Click on **Eclipse IDE for Java Developers**
+    
+    ![](images/43_macos_eclipse_5.png)
+
+5. Follow the installer to finish installation
+    
+    ![](images/44_macos_eclipse_6.png)
 
 #### Install Eclipse on Ubuntu Linux
 
@@ -154,6 +178,13 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
     ```
 
 ## Course 01
+
+**MacOS Users: Please make sure to follow these steps to "downgrade" your TextEdit to save simple java files:**
+
+- on the menu bar on the top left corner of your screen, click on TextEdit, then Preferences.
+- In the New Document tab, change the document format to Plain Text under the Format section. Uncheck the Smart quotes box under the Options section towards the bottom of the preference window.
+- Switch to the Open and Save tab. Change the Opening files and Saving files to Unicode (UTF-8).
+- Close the TextEdit application and re-open it. Open a new document.
 
 ### Task overview
 
