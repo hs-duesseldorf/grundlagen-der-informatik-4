@@ -300,21 +300,24 @@ In the following frame, click on ***Don't Create***, to skip the module descript
 2. Inside the project `se1c2` create the new class `FourOutOfSixCoins` and within implement the following:
     - There are four coins
     - Each coin has a value between 1 and 6
-    - Print out each possible combination
+    - Print out each possible combination in the terminal
     - Print out the total number of combinations in the terminal
 3. Inside the project `se1c2` create the application ```VariableCoins``` and within implement the following:
    - Set global integer variables ```AMOUNT_OF_COINS``` and ```COIN_MAX_VALUE```
    - There are ```AMOUNT_OF_COINS``` coins
    - Each coin has a value between 1 and ```COIN_MAX_VALUE```
-   - Print out each possible combination
+   - Print out each possible combination in the terminal
    - Print out the total number of combinations in the terminal
+
+**Permutations do not have to be included in the calculation!**
 
 Example output:
 ```
-[1, 2, 3, 4]
+...
+[4, 2, 3, 1]
 [1, 2, 3, 5]
-[1, 2, 3, 6]
-[1, 2, 4, 5]
+[6, 2, 1, 3]
+[1, 2, 5, 4]
 ...
 ...
 ...
