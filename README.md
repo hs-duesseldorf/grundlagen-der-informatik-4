@@ -297,15 +297,28 @@ In the following frame, click on ***Don't Create***, to skip the module descript
 ### Tasks
 
 1. Create the ***Java*** project `se1c2`
-2. Create the application ```FourOutOfSixCoins```:
-    - There are 6 given coins
+2. Inside the project `se1c2` create the new class `FourOutOfSixCoins` and within implement the following:
+    - There are four coins
+    - Each coin has a value between 1 and 6
     - Print out each possible combination
     - Print out the total number of combinations in the terminal
-3. Create the application ```VariableCoins```:
-   - Set global integer variables ```MAX``` and ```SUB```
-   - There are ```MAX``` given coins
-   - Print out every combination of ```SUB``` coins
+3. Inside the project `se1c2` create the application ```VariableCoins``` and within implement the following:
+   - Set global integer variables ```AMOUNT_OF_COINS``` and ```COIN_MAX_VALUE```
+   - There are ```AMOUNT_OF_COINS``` coins
+   - Each coin has a value between 1 and ```COIN_MAX_VALUE```
+   - Print out each possible combination
    - Print out the total number of combinations in the terminal
+
+Example output:
+```
+[1, 2, 3, 4]
+[1, 2, 3, 5]
+[1, 2, 3, 6]
+[1, 2, 4, 5]
+...
+...
+...
+```
 
 ## Course 03 (Currently German only)
 
