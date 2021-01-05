@@ -379,12 +379,12 @@ sitze und tankInhalt und dem öffentlichen Float-Attribut verbrauch.
 
 ### Topic
 
-Graphical user interface (GUI) visualizing a lottery drawing.
+Java FX Graphical user interface (GUI) visualizing a lottery drawing.
 
 ### Tasks
 
-1. Create the Maven project ```se1c4``` by using the archetype `javafx-archetype-simple` from `org.openjfx`
-2. Replace the Code in `App.java` and create a GUI which consists of 6 `TextField`s and one "Draw" `Button`. Fill the `TextField`s with random numbers between 1 and 49 via ```Math.random()```.
+1. Create the Maven project ```se1c4``` by using the archetype `javafx-archetype-simple` from `org.openjfx` to create a **JAVA FX** (not Swing!) appliction
+2. Extend the Code in `App.java` and create a GUI which consists of 6 [TextField](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/TextField.html)'s and one "Draw" [Button](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Button.html). Fill the `TextField`s with random numbers between 1 and 49 via ```Math.random()```.
 3. Extend the application with the following features:
     - No number is drawn more than 1 time
     - All numbers are sorted ascending from left to right
