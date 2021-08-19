@@ -33,6 +33,8 @@
 
 ### Install Java 11
 
+**Dislaimer: the exact Java 11 version number may be higher than the version number in the screenshots - but it needs to be Java 11, not 8 or 14 or higher**
+
 #### Install Java 11 on Windows
 
 1. Open https://adoptopenjdk.net  in your browser
