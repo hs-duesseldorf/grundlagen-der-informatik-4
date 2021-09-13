@@ -4,10 +4,6 @@
       - [Install Java 11 on Windows](#install-java-11-on-windows)
       - [Install Java 11 on MacOS](#install-java-11-on-macos)
       - [Install Java 11 on Ubuntu Linux](#install-java-11-on-ubuntu-linux)
-    - [Install JavaFX](#install-javafx)
-      - [Install JavaFX on Windows](#install-javafx-on-windows)
-      - [Install JavaFX on MacOS](#install-javafx-on-macos)
-      - [Install JavaFX on Ubuntu Linux](#install-javafx-on-ubuntu-linux)
     - [Install Eclipse](#install-eclipse)
       - [Install Eclipse on Windows](#install-eclipse-on-windows)
       - [Install Eclipse on MacOS](#install-eclipse-on-macos)
@@ -37,28 +33,33 @@
 
 #### Install Java 11 on Windows
 
-1. Open https://adoptopenjdk.net  in your browser
-2. Download and run the adopt open JDK 11 installation wizard
+1. Open https://adoptium.net/  in your browser
+2. Download and run the adoptium open JDK 11 installation wizard ...
 ![01_download_adopt_openjdk](images/01_download_adopt_openjdk.png)
 
-3. Click through the adopt open jdk wizard:  
+    ... and click "OK" for the installtion warning
+
+    ![01_2_warning](images/01_2_download_adopt_openjdk_warning.png)
+
+3. Click through the adoptium open JDK wizard:  
 ![02_openjdk_installer_1](images/02_openjdk_installer_1.png)
-![03_openjdk_installer_2](images/03_openjdk_installer_2.png)
 ![04_openjdk_installer_3](images/04_openjdk_installer_3.png)
 ![5_openjdk_installer_4](images/05_openjdk_installer_4.png)
 ![06_openjdk_installer_5](images/06_openjdk_installer_5.png)
 ![07_openjdk_installer_6](images/07_openjdk_installer_6.png)
+(the name might have changed to "Adoptium Open JDK")
 ![08_openjdk_installer_7](images/08_openjdk_installer_7.png)
 
-3. Verify that java has been installed successfully by running the command `java -version` in your Windows command line interface:
+
+3. Verify that java has been installed successfully by running the command `java -version` in your Windows command line interface, the exact version may be different at the time you run this command:
 ![09_verify_java_1](images/09_verify_java_1.png)
 ![10_verify_java_2](images/10_verify_java_2.png)
 ![11_verify_java_3](images/11_verify_java_3.png)
 
 #### Install Java 11 on MacOS
 
-1. Open https://adoptopenjdk.net  in your browser
-2. Download and run the adopt open JDK 11 installation wizard
+1. Open https://adoptium.net/  in your browser
+2. Download and run the adoptium open JDK 11 installation wizard
 ![](images/35_macos_adoptopenjdk_1.png)
 ![](images/36_macos_adoptopenjdk_2.png)
 ![](images/37_macos_adoptopenjdk_3.png)
@@ -71,55 +72,7 @@
 2. Run the following command:
 
     ```bash
-    sudo apt install default-jdk
-    ```
-
-### Install JavaFX
-
-#### Install JavaFX on Windows
-
-1. Open your browser and navigate to https://gluonhq.com/products/javafx/
-2. Click on the green Download-Button for JavaFX Windows SDK
-
-    ![](images/27_install_javafx_libs_01.png)
-
-3. Navigate to the directory where you've downloaded the ZIP to
-
-    ![](images/28_install_javafx_libs_02.png)
-
-4. Right click and extract
-
-    ![](images/29_install_javafx_libs_03.png)
-
-5. Select a directory to extract
-
-    ![](images/30_install_javafx_libs_04.png)
-
-6. Navigate to the directory where you've extracted the ZIP-archive to and click your way to the **lib-directory**
-7. Hold the shift button, then left click to select all files except the **src** ZIP - do NOT select the **src** ZIP
-
-    ![](images/31_install_javafx_libs_05.png)
-
-   
-7. Check that all files except the src zip are marked and then copy them with either right-click->copy or pressing CTRL + C
-
-    ![](images/32_install_javafx_libs_06.png)
-
-8. Navigate to `C:\Program Files\AdoptOpenJDK\jdk-11.0.8.10-hotspot\lib` (the version number might be different by the time you work through this tutorial) and paste your copied files into this **lib** directory by either righ-click->paste or pressing CTRL + V on your keyboard
-
-    ![](images/33_install_javafx_libs_07.png)
-
-#### Install JavaFX on MacOS
-
-You don't need to install JavaFX on MacOS if you've installed AdoptOpenJDK from above, and use Maven Projects to create JavaFX Applications.
-
-#### Install JavaFX on Ubuntu Linux
-
-1. Open a new terminal (CTRL + ALT + T)
-2. run the following command to install javafx
-
-    ```bash
-    sudo apt install openjfx
+    sudo apt install default-jdk openjfx
     ```
 
 ### Install Eclipse
@@ -339,43 +292,43 @@ Die Demo-Klassen sollen genutzt werden, um einzelne Instanzen der Kfz Klassen zu
 erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
 
 ### Tasks:
-1. Erstellen Sie das neue Java Projekt `se1c3`.
-2. Erstellen Sie sukzessive die Klassen KfzV0, Kfz und Lkw:
-3. Implementieren Sie die Klasse KfzV0 mit den öffentlichen Integer-Attributen
-sitze und tankInhalt und dem öffentlichen Float-Attribut verbrauch.
+1. Erstellen Sie das neue **Java Projekt** `se1c3`.
+2. Erstellen Sie sukzessive (nacheinander) die Klassen ``KfzV0``, ``Kfz`` und ``Lkw``:
+3. Implementieren Sie die Klasse ``KfzV0`` mit den öffentlichen Integer-Attributen
+``sitze`` und ``tankInhalt`` und dem öffentlichen Float-Attribut verbrauch.
 4. Implementieren Sie das Programm KfzDemo.java mit einer main-Methode:
-   - Die Instanz minivan wird von der Klasse KfzV0 erzeugt.
-   - Die Attribute werden mit sitze = 6, tankInhalt = 70, verbrauch = 14 initialisiert.
+   - Die Instanz ``minivan`` wird von der Klasse ``KfzV0`` erzeugt.
+   - Die Attribute werden mit ``sitze = 6``, ``tankInhalt = 70``, ``verbrauch = 14`` initialisiert.
    - Die mögliche Reichweite bei vollem Tank wird ausgerechnet und mit
-   System.out.println ausgegeben.
-5. Erstellen Sie ausgehend von KfzDemo.java die Klasse ZweiKfz.java:
-   - Zusätzlich zur minivan Instanz wird eine Instanz sportwagen von der Klasse KfzV0 erzeugt.
-   - Die Attribute von sportwagen werden mit sitze = 2, tankInhalt = 45, verbrauch = 11 initialisiert.
-   - Die mögliche Reichweite von sportwagen bei vollem Tank wird ausgerechnet und mittels System.out.println ausgegeben.
-6. Erweitern Sie die Klasse KfzV0 um die Methode reichweite(), die die Reichweite als Rückgabewert liefert.
-7. Erstellen Sie die Klasse ReturnDemo.java:
+   ``System.out.println`` ausgegeben.
+   5. Erstellen Sie ausgehend von ``KfzDemo.java`` die Klasse ``ZweiKfz.java``:
+   - Zusätzlich zur ``minivan`` Instanz wird eine Instanz ``sportwagen`` von der Klasse ``KfzV0`` erzeugt.
+   - Die Attribute von ``sportwagen`` werden mit ``sitze = 2``, ``tankInhalt = 45``, ``verbrauch = 11`` initialisiert.
+   - Die mögliche Reichweite von ``sportwagen`` bei vollem Tank wird ausgerechnet und mittels ``System.out.println`` ausgegeben.
+6. Erweitern Sie die Klasse ``KfzV0`` um die Methode ``reichweite()``, die die Reichweite als Rückgabewert liefert.
+7. Erstellen Sie die Klasse ``ReturnDemo.java``:
    - Die Ausgabe der Reichweite erfolgt in der main-Methode, wobei die Methode
    reichweite() genutzt wird.
-8. Die Klasse KfzV0 wird um die Methode spritVerbrauch(int km) erweitert.
+8. Die Klasse ``KfzV0`` wird um die Methode spritVerbrauch(int km) erweitert.
    - Die Methode hat als Eingabeparameter eine Entfernung in Kilometern.
    - Sie berechnet den entsprechenden Spritverbrauch für die Entfernung.
    - Der Spritverbrauch wird als float-Ergebnis zurückgegeben.
-9. Erstellen Sie ausgehend von ReturnDemo.java die Klasse SpritDemo.java:
+9. Erstellen Sie ausgehend von ``ReturnDemo.java`` die Klasse ``SpritDemo.java``:
    - Die Methode spritVerbrauch wird in der main-Methode für die Entfernung 252 km aufgerufen und die Ergebnisse für die beiden Instanzen ausgegeben.
-10. Erstellen Sie ausgehend von KfzV0.java die Klasse Kfz. Die neue Klasse Kfz wird um den Konstruktor Kfz(int sitze, int tankInhalt, float verbrauch) erweitert. Zusätzlich werden alle Attribute auf privat gesetzt.
-11. Erstellen Sie ausgehend von SpritDemo.java die Klasse KonstruktorDemo.java:
-    - Die Attribute werden über den Konstruktor Kfz initialisiert.
-12.  Die Klasse Lkw wird von Kfz abgeleitet (Vererbung):
-    - Sie hat die beiden zusätzlichen Attribute int ladeFlaeche und boolean hatAnhaenger.
-    - Der Konstruktor Lkw initialisiert alle Attribute.
-    - Die Lkw-Methode spritVerbrauch addiert immer einen Liter zum errechneten Verbrauch hinzu.
-13. Implementieren Sie das Programm LkwDemo.java mit:
-    - Einer Instanz sportWagen der Klasse Kfz und einer Instanz magirus der Klasse
-    Lkw.
+10. Erstellen Sie ausgehend von ``KfzV0.java`` die Klasse ``Kfz``. Die neue Klasse ``Kfz`` wird um die Konstruktor-Methode ``Kfz(int sitze, int tankInhalt, float verbrauch)`` erweitert. Zusätzlich werden alle Attribute auf ``private`` gesetzt.
+11. Erstellen Sie ausgehend von ``SpritDemo.java`` die Klasse ``KonstruktorDemo.java``:
+    - Die Attribute werden über den Konstruktor ``Kfz`` initialisiert.
+12.  Die Klasse Lkw wird von ``Kfz`` abgeleitet (Vererbung):
+    - Sie hat die beiden zusätzlichen Attribute ``int ladeFlaeche`` und ``boolean hatAnhaenger``.
+    - Der Konstruktor ``Lkw`` initialisiert alle Attribute.
+    - Die Lkw-Methode ``spritVerbrauch`` addiert immer einen Liter zum errechneten Verbrauch hinzu.
+13. Implementieren Sie das Programm ``LkwDemo.java`` mit:
+    - Einer Instanz ``sportWagen`` der Klasse ``Kfz`` und einer Instanz ``magirus`` der Klasse
+    ``Lkw``.
     - Die magirus-Instanz hat die gleichen Attribute wie die sportwagen-Instanz (nur
     zur Demo).
-    - Weisen Sie der zusätzlichen Kfz-Variable kfz (keine Instanziierung)
-    nacheinander sportWagen und magirus zu und geben Sie jeweils den Verbrauch auf 252 km aus.
+    - Weisen Sie der zusätzlichen Kfz-Variable ``kfz`` (keine Instanziierung)
+    nacheinander ``sportWagen`` und ``magirus`` zu und geben Sie jeweils den Verbrauch auf 252 km aus.
     
 ## Course 04
 
