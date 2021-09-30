@@ -257,7 +257,7 @@ In the following frame, click on ***Don't Create***, to skip the module descript
     - Each coin has a value between 1 and 6
     - Print out each possible combination in the terminal
     - Print out the total number of combinations in the terminal
-3. Inside the project `se1c2` create the application ```VariableCoins``` and within implement the following:
+3. (OPTIONAL) Inside the project `se1c2` create the application ```VariableCoins``` and within implement the following:
    - Set global integer variables ```AMOUNT_OF_COINS``` and ```COIN_MAX_VALUE```
    - There are ```AMOUNT_OF_COINS``` coins
    - Each coin has a value between 1 and ```COIN_MAX_VALUE```
