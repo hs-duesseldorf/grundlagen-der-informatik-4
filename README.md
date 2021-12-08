@@ -297,12 +297,12 @@ erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
    - Implementieren Sie die Klasse ``KfzV0`` mit den öffentlichen Integer-Attributen
    ``sitze`` und ``tankInhalt`` und dem öffentlichen Float-Attribut verbrauch.
 3. Implementieren Sie das Programm KfzDemo.java mit einer main-Methode:
-   - Die Instanz ``minivan`` wird von der Klasse ``KfzV0`` erzeugt.
+   - Das Objekt ``minivan`` wird von der Klasse ``KfzV0`` erzeugt.
    - Die Attribute werden mit ``sitze = 6``, ``tankInhalt = 70``, ``verbrauch = 14`` initialisiert.
    - Die mögliche Reichweite bei vollem Tank wird ausgerechnet und mit
    ``System.out.println`` ausgegeben.
 4. Erstellen Sie ausgehend von ``KfzDemo.java`` die Klasse ``ZweiKfz.java``:
-   - Zusätzlich zur ``minivan`` Instanz wird eine Instanz ``sportwagen`` von der Klasse ``KfzV0`` erzeugt.
+   - Zusätzlich zum ``minivan`` Objekt wird ein Objekt ``sportwagen`` von der Klasse ``KfzV0`` erzeugt.
    - Die Attribute von ``sportwagen`` werden mit ``sitze = 2``, ``tankInhalt = 45``, ``verbrauch = 11`` initialisiert.
    - Die mögliche Reichweite von ``sportwagen`` bei vollem Tank wird ausgerechnet und mittels ``System.out.println`` ausgegeben.
 5. Erweitern Sie die Klasse ``KfzV0`` um die Methode ``reichweite()``, die die Reichweite als Rückgabewert liefert.
@@ -323,11 +323,11 @@ erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
     - Der Konstruktor ``Lkw`` initialisiert alle Attribute.
     - Die Lkw-Methode ``spritVerbrauch`` addiert immer einen Liter zum errechneten Verbrauch hinzu.
 12. Implementieren Sie das Programm ``LkwDemo.java`` mit:
-    - Einer Instanz ``sportWagen`` der Klasse ``Kfz`` und einer Instanz ``magirus`` der Klasse
+    - Einem Objekt ``sportWagen`` der Klasse ``Kfz`` und ein Objekt ``magirus`` der Klasse
     ``Lkw``.
-    - Die magirus-Instanz hat die gleichen Attribute wie die sportwagen-Instanz (nur
+    - Das magirus-Objekt hat die gleichen Attribute wie das sportwagen-Objekt (nur
     zur Demo).
-    - Weisen Sie der zusätzlichen Kfz-Variable ``kfz`` (keine Instanziierung)
+    - Weisen Sie der zusätzlichen Referenz-Variable ``kfz`` der Klasse Kfz (keine Instanziierung)
     nacheinander ``sportWagen`` und ``magirus`` zu und geben Sie jeweils den Verbrauch auf 252 km aus.
     
 ## Course 04
