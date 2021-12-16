@@ -8,6 +8,10 @@
       - [Install Eclipse on Windows](#install-eclipse-on-windows)
       - [Install Eclipse on MacOS](#install-eclipse-on-macos)
       - [Install Eclipse on Ubuntu Linux](#install-eclipse-on-ubuntu-linux)
+  - [Install VSCode](#install-vscode)
+    - [macOS](#macos)
+      - [Install using the Desktop](#install-using-the-desktop)
+      - [Install using Homebrew (for the advanced user)](#install-using-homebrew-for-the-advanced-user)
   - [Course 01](#course-01)
     - [Task overview](#task-overview)
     - [Tasks](#tasks)
@@ -131,6 +135,27 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
     ```bash
     sudo snap install eclipse --classic --edge
     ```
+
+## Install VSCode
+
+### macOS
+
+#### Install using the Desktop
+
+1. Download the VSCode App from the official website.
+  [https://code.visualstudio.com](https://code.visualstudio.com/)
+ ![VSCode Download macOS](images/macos_vscode_install_1.png)
+
+2. Install the app on your system. Simply drag and drop the downloaded `*.app` file into your Applications folder.
+ ![VSCode Install macOS](images/macos_vscode_install_2.png)
+
+#### Install using Homebrew (for the advanced user)
+
+[Homebrew](https://brew.sh/) is an **unofficial**, free and open-source package manager for macOS. Once Homebrew is installed inside your terminal, go ahead and run the following command:
+
+```sh
+brew install --cask visual-studio-code
+```
 
 ## Course 01
 
