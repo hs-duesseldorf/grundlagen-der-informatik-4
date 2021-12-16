@@ -15,6 +15,9 @@
       - [Install using Homebrew (for the advanced user)](#install-using-homebrew-for-the-advanced-user)
     - [Ubuntu](#ubuntu)
   - [Setup vscode](#setup-vscode)
+  - [How-to use vscode for Java development](#how-to-use-vscode-for-java-development)
+    - [Create a simple java project](#create-a-simple-java-project)
+    - [Create a maven project](#create-a-maven-project)
   - [Course 01](#course-01)
     - [Task overview](#task-overview)
     - [Tasks](#tasks)
@@ -204,6 +207,17 @@ sudo snap install code --classic
    ![](images/57_setup_vscode_02.png)
    
    ![](images/58_setup_vscode_03.png)
+
+
+## How-to use vscode for Java development
+
+### Create a simple java project
+
+![](images/vscode_maven_java_app.gif)
+
+### Create a maven project
+
+![](images/vscode_maven_java_app.gif)
 
 ## Course 01
 
