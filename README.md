@@ -8,10 +8,13 @@
       - [Install Eclipse on Windows](#install-eclipse-on-windows)
       - [Install Eclipse on MacOS](#install-eclipse-on-macos)
       - [Install Eclipse on Ubuntu Linux](#install-eclipse-on-ubuntu-linux)
-  - [Install VSCode](#install-vscode)
-    - [macOS](#macos)
-      - [Install using the Desktop](#install-using-the-desktop)
+  - [Install Visual Studio Code (vscode)](#install-visual-studio-code-vscode)
+    - [Windows](#windows)
+    - [MacOS](#macos)
+      - [Install via Installer](#install-via-installer)
       - [Install using Homebrew (for the advanced user)](#install-using-homebrew-for-the-advanced-user)
+    - [Ubuntu](#ubuntu)
+  - [Setup vscode](#setup-vscode)
   - [Course 01](#course-01)
     - [Task overview](#task-overview)
     - [Tasks](#tasks)
@@ -136,14 +139,39 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
     sudo snap install eclipse --classic --edge
     ```
 
-## Install VSCode
+## Install Visual Studio Code (vscode)
 
-### macOS
+### Windows
 
-#### Install using the Desktop
+1) Download the vscode installer [from the official website.
+  ](https://code.visualstudio.com/)
 
-1. Download the VSCode App from the official website.
-  [https://code.visualstudio.com](https://code.visualstudio.com/)
+  ![](images/48_download_vscode_installer.png)
+
+2) Locate the vscode installer on your computer (for example in Downloads)
+   
+   ![](images/49_find_vscode_installer.png)
+
+3) Run the vscode installer
+   
+   ![](images/50_run_vscode_installer_01.png)
+
+   ![](images/51_run_vscode_installer_02.png)
+
+   ![](images/52_run_vscode_installer_03.png)
+
+   ![](images/53_run_vscode_installer_04.png)
+
+   ![](images/54_run_vscode_installer_05.png)
+
+   ![](images/55_run_vscode_installer_06.png)
+
+### MacOS
+
+#### Install via Installer
+
+1. Download the vscode App [from the official website.
+  ](https://code.visualstudio.com/)
  ![VSCode Download macOS](images/macos_vscode_install_1.png)
 
 2. Install the app on your system. Simply drag and drop the downloaded `*.app` file into your Applications folder.
@@ -156,6 +184,26 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 ```sh
 brew install --cask visual-studio-code
 ```
+
+### Ubuntu
+
+Open a new terminal with ```CTRL + SHIFT + T``` and run the following command to instal vscode:
+
+```bash
+sudo snap install code --classic
+```
+
+## Setup vscode
+
+1) Click on the "Extension" Icon in the left panel
+   
+   ![](images/56_setup_vscode_01.png)
+
+2) search for `java extension pack` in the search field click on the first entry (NOTE: check that the distributor is MICROSOFT and no-one else) and click on the `Install` button to installer the extension pack. Wait until all extensions are installed.
+   
+   ![](images/57_setup_vscode_02.png)
+   
+   ![](images/58_setup_vscode_03.png)
 
 ## Course 01
 
