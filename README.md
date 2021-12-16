@@ -8,16 +8,16 @@
       - [Install Eclipse on Windows](#install-eclipse-on-windows)
       - [Install Eclipse on MacOS](#install-eclipse-on-macos)
       - [Install Eclipse on Ubuntu Linux](#install-eclipse-on-ubuntu-linux)
-  - [Install Visual Studio Code (vscode)](#install-visual-studio-code-vscode)
-    - [Windows](#windows)
-    - [MacOS](#macos)
-      - [Install via Installer](#install-via-installer)
-      - [Install using Homebrew (for the advanced user)](#install-using-homebrew-for-the-advanced-user)
-    - [Ubuntu](#ubuntu)
-  - [Setup vscode](#setup-vscode)
-  - [How-to use vscode for Java development](#how-to-use-vscode-for-java-development)
-    - [Create a simple java project](#create-a-simple-java-project)
-    - [Create a maven project](#create-a-maven-project)
+    - [Install Visual Studio Code (vscode)](#install-visual-studio-code-vscode)
+      - [Windows](#windows)
+      - [MacOS](#macos)
+        - [Install via Installer](#install-via-installer)
+        - [Install using Homebrew (for the advanced user)](#install-using-homebrew-for-the-advanced-user)
+      - [Ubuntu](#ubuntu)
+    - [Setup vscode](#setup-vscode)
+    - [How-to use vscode for Java development](#how-to-use-vscode-for-java-development)
+      - [Create a simple java project](#create-a-simple-java-project)
+      - [Create a maven project](#create-a-maven-project)
   - [Course 01](#course-01)
     - [Task overview](#task-overview)
     - [Tasks](#tasks)
@@ -149,9 +149,9 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
     sudo snap install eclipse --classic --edge
     ```
 
-## Install Visual Studio Code (vscode)
+### Install Visual Studio Code (vscode)
 
-### Windows
+#### Windows
 
 1) Download the vscode installer [from the official website.
   ](https://code.visualstudio.com/)
@@ -176,9 +176,9 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 
    ![](images/55_run_vscode_installer_06.png)
 
-### MacOS
+#### MacOS
 
-#### Install via Installer
+##### Install via Installer
 
 1. Download the vscode App [from the official website.
   ](https://code.visualstudio.com/)
@@ -187,7 +187,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 2. Install the app on your system. Simply drag and drop the downloaded `*.app` file into your Applications folder.
  ![VSCode Install macOS](images/macos_vscode_install_2.png)
 
-#### Install using Homebrew (for the advanced user)
+##### Install using Homebrew (for the advanced user)
 
 [Homebrew](https://brew.sh/) is an **unofficial**, free and open-source package manager for macOS. Once Homebrew is installed inside your terminal, go ahead and run the following command:
 
@@ -195,7 +195,7 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
 brew install --cask visual-studio-code
 ```
 
-### Ubuntu
+#### Ubuntu
 
 Open a new terminal with ```CTRL + SHIFT + T``` and run the following command to instal vscode:
 
@@ -203,7 +203,7 @@ Open a new terminal with ```CTRL + SHIFT + T``` and run the following command to
 sudo snap install code --classic
 ```
 
-## Setup vscode
+### Setup vscode
 
 1) Click on the "Extension" Icon in the left panel
    
@@ -216,13 +216,13 @@ sudo snap install code --classic
    ![](images/58_setup_vscode_03.png)
 
 
-## How-to use vscode for Java development
+### How-to use vscode for Java development
 
-### Create a simple java project
+#### Create a simple java project
 
 ![](images/vscode_simple_java_app.gif)
 
-### Create a maven project
+#### Create a maven project
 
 ![](images/vscode_maven_java_app.gif)
 
