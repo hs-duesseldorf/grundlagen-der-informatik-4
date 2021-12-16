@@ -1,5 +1,5 @@
 - [Software Engineering 1](#software-engineering-1)
-  - [Java 11 & Eclipse Tutorial](#java-11--eclipse-tutorial)
+  - [Java 11, Eclipse and vscode Tutorial](#java-11-eclipse-and-vscode-tutorial)
     - [Install Java 11](#install-java-11)
       - [Install Java 11 on Windows](#install-java-11-on-windows)
       - [Install Java 11 on MacOS](#install-java-11-on-macos)
@@ -35,7 +35,14 @@
 
 # Software Engineering 1
 
-## Java 11 & Eclipse Tutorial
+## Java 11, Eclipse and vscode Tutorial
+
+For the following courses you need to have
+
+1) Java 11 installed on your computer
+2) Eclipse and/or vscode installed on your computer
+
+You can chose whatever IDE you prefer.
 
 ### Install Java 11
 
@@ -213,7 +220,7 @@ sudo snap install code --classic
 
 ### Create a simple java project
 
-![](images/vscode_maven_java_app.gif)
+![](images/vscode_simple_java_app.gif)
 
 ### Create a maven project
 
