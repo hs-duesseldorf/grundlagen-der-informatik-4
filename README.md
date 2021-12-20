@@ -215,6 +215,10 @@ sudo snap install code --classic
    
    ![](images/58_setup_vscode_03.png)
 
+3) (Optional) search for `spring boot extension pack` in the search field click on the first entry (NOTE: check that the distributor is PIVOTAL and no-one else) and click on the `Install` button to installer the extension pack. Wait until all extensions are installed.
+   
+   ![](images/install_spring_boot_extension_pack.png)
+
 
 ### How-to use vscode for Java development
 
