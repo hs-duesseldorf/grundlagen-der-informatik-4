@@ -207,7 +207,9 @@ ______
 ## Course 01
 
 <details>
-<summary> MacOS Users only: Please make sure to follow these steps to "downgrade" your TextEdit to save simple java files: </summary>
+<summary> MacOS Users only - CLICK TO EXPAND </summary>
+
+Please make sure to follow these steps to "downgrade" your TextEdit to save simple java files:
 
 - on the menu bar on the top left corner of your screen, click on TextEdit, then Preferences.
 - In the New Document tab, change the document format to Plain Text under the Format section. Uncheck the Smart quotes box under the Options section towards the bottom of the preference window.
