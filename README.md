@@ -204,6 +204,8 @@ sudo snap install code --classic
 
 ______
 
+**ATTENTION:** When you are inside the HSD laboratory room safe ALL your work on the `H:\` drive!!!
+
 ## Course 01
 
 <details>
@@ -240,6 +242,16 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
     ```bash
     cd PATH_TO_YOU_FILE
     ```
+
+    NOTE: For Windows drives like `C:` or `H:` you just enter...
+
+    ```
+    H:
+    ```
+    **without the `cd` command**
+
+    ... to change to this mount point.
+
 3. Type ```javac Hello.java``` and press enter
 4. Now the java code has been compiled to ```Hello.class``` which you can run from within your terminal with:
     ```java
