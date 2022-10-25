@@ -373,7 +373,7 @@ erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
 1. Erstellen Sie das neue **Java Projekt** `se1c3`.
 2. Erstellen Sie sukzessive (nacheinander) die Klassen ``KfzV0``, ``Kfz`` und ``Lkw``:
    - Implementieren Sie die Klasse ``KfzV0`` mit den öffentlichen Integer-Attributen
-   ``sitze`` und ``tankInhalt`` und dem öffentlichen Float-Attribut verbrauch.
+   ``sitze`` und ``tankInhalt`` und dem öffentlichen Float-Attribut `verbrauch`.
 3. Implementieren Sie das Programm KfzDemo.java mit einer main-Methode:
    - Das Objekt ``minivan`` wird von der Klasse ``KfzV0`` erzeugt.
    - Die Attribute werden mit ``sitze = 6``, ``tankInhalt = 70``, ``verbrauch = 14`` initialisiert.
