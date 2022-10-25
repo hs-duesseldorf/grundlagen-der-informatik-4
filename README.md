@@ -37,7 +37,7 @@ For the following courses you need to have
 ![08_openjdk_installer_7](images/08_openjdk_installer_7.png)
 
 
-5. Verify that java has been installed successfully by running the command `java -version` in your Windows command line interface, the exact version may be different at the time you run this command:
+5. Verify that java has been installed successfully by running the command `java --version` in your Windows command line interface, the exact version may be different at the time you run this command:
 ![09_verify_java_1](images/09_verify_java_1.png)
 ![10_verify_java_2](images/10_verify_java_2.png)
 ![11_verify_java_3](images/11_verify_java_3.png)
