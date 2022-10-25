@@ -45,7 +45,7 @@ For the following courses you need to have
 #### Install Java 17 on MacOS
 
 1. Open https://adoptium.net/  in your browser
-2. Download and run the adoptium open JDK 11 installation wizard
+2. Download and run the adoptium open JDK 17 installation wizard
 ![](images/35_macos_adoptopenjdk_1.png)
 ![](images/36_macos_adoptopenjdk_2.png)
 ![](images/37_macos_adoptopenjdk_3.png)
