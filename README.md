@@ -1,29 +1,33 @@
 # Software Engineering 1
 
-## Java 11, Eclipse and vscode Tutorial
+## Setup your development environment: Java 17, Eclipse and vscode Tutorial
 
 For the following courses you need to have
 
-1) Java 11 installed on your computer
-2) Eclipse and/or vscode installed on your computer
+1) **Java 17** installed on your computer
+2) **Eclipse** installed on your computer (alternatively vscode + maven, but for beginners we recommend Eclipse)
 
-You can chose whatever IDE you prefer.
+<details>
+<summary> CLICK TO VIEW THE SETUP TUTORIAL </summary>
 
-### Install Java 11
+### Install Java 17
 
-**Dislaimer: the exact Java 11 version number may be higher than the version number in the screenshots - but it needs to be Java 11, not 8 or 14 or higher**
+**Disclaimer: the exact Java 17 version number may be higher than the version number in the screenshots - but it needs to be Java 17, not 11, not 8 or 14 or higher**
 
-#### Install Java 11 on Windows
+#### Install Java 17 on Windows
 
 1. Open https://adoptium.net/  in your browser
-2. Download and run the adoptium open JDK 11 installation wizard ...
+2. Download the installer
 ![01_download_adopt_openjdk](images/01_download_adopt_openjdk.png)
+![](images/01_download_adopt_openjdk_to_downloads.png)
+3. and start the installer
+![](images/01_run_.png)
 
-    ... and click "OK" for the installtion warning
+    ... sometimes you need to click "OK" for the installtion warning
 
     ![01_2_warning](images/01_2_download_adopt_openjdk_warning.png)
 
-3. Click through the adoptium open JDK wizard:  
+4. Click through the adoptium open JDK wizard:  
 ![02_openjdk_installer_1](images/02_openjdk_installer_1.png)
 ![04_openjdk_installer_3](images/04_openjdk_installer_3.png)
 ![5_openjdk_installer_4](images/05_openjdk_installer_4.png)
@@ -33,12 +37,12 @@ You can chose whatever IDE you prefer.
 ![08_openjdk_installer_7](images/08_openjdk_installer_7.png)
 
 
-3. Verify that java has been installed successfully by running the command `java -version` in your Windows command line interface, the exact version may be different at the time you run this command:
+5. Verify that java has been installed successfully by running the command `java -version` in your Windows command line interface, the exact version may be different at the time you run this command:
 ![09_verify_java_1](images/09_verify_java_1.png)
 ![10_verify_java_2](images/10_verify_java_2.png)
 ![11_verify_java_3](images/11_verify_java_3.png)
 
-#### Install Java 11 on MacOS
+#### Install Java 17 on MacOS
 
 1. Open https://adoptium.net/  in your browser
 2. Download and run the adoptium open JDK 11 installation wizard
@@ -115,6 +119,8 @@ If you like you can also run the Eclipse installer wizard on Ubuntu linux from h
     ```
 
 ### Install Visual Studio Code (vscode)
+
+**IMPORTANT**: for Software Engineering **1** we recommend to use Eclipse, even though vscode is a much faster and more modern IDE/editor. However if you insist on using it, here is how to install it.
 
 #### Windows
 
@@ -194,20 +200,26 @@ sudo snap install code --classic
 #### Create a maven project
 
 ![](images/vscode_maven_java_app.gif)
+</details>
+
+______
 
 ## Course 01
 
-**MacOS Users: Please make sure to follow these steps to "downgrade" your TextEdit to save simple java files:**
+<details>
+<summary> MacOS Users only: Please make sure to follow these steps to "downgrade" your TextEdit to save simple java files: </summary>
 
 - on the menu bar on the top left corner of your screen, click on TextEdit, then Preferences.
 - In the New Document tab, change the document format to Plain Text under the Format section. Uncheck the Smart quotes box under the Options section towards the bottom of the preference window.
 - Switch to the Open and Save tab. Change the Opening files and Saving files to Unicode (UTF-8).
 - Close the TextEdit application and re-open it. Open a new document.
 
+</details>
+
 ### Task overview
 
 1. Create, compile and run a simple "Hello World" java application.
-2. Use the Eclipse "Hello World" to get used to Eclipse *Java* Projects.
+2. Use the Eclipse "Hello World tutorial" to get used to Eclipse *Java* Projects.
 3. Create, compile and run a java application with a simple JavaFX graphical user interface with Eclipse via a *Maven* Project
 
 ### Tasks
@@ -235,8 +247,9 @@ sudo snap install code --classic
 #### Task 2 - Hello World Eclipse tutorial
 
 1. Open Eclipse
-2. Click on `Create a Hello World application`
+2. Click on `Tutorials` -> `Create a Hello World application`
 
+    ![](images/19_eclipse_hello_world_1.png)
     ![](images/19_eclipse_hello_world.png)
 
 3. Follow the guide on the right side of your screen to create the Hello World application and run it.
