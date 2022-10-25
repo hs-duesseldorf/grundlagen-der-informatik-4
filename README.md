@@ -230,7 +230,11 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
 
 #### Task 1 - Simple "Hello-Java-App"
 
-1. Open a simple text editor (Windows Notepad, Ubuntu Gedit or MacOs TextEdit) enter the following code and save it as ```Hello.java``` to your desired location:
+1. Let your file explorer show file extensions to safe files with the correct `.java` file extension:
+
+![](images/windoof.png)
+
+2. Open a simple text editor (Windows Notepad, Ubuntu Gedit or MacOs TextEdit) enter the following code and save it as ```Hello.java``` to your desired location:
     ```java
     public class Hello {
         public static void main(String args[]) {
@@ -238,7 +242,7 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
         }
     }
     ```
-2. Open a command line interface (Windows: Windows-Key + R -> Type `Cmd.exe`, press enter, Ubuntu: CTRL + SHIFT + T, MacOs: search for `Terminal`) and navigate to the location where you saved your Java Code with:
+3. Open a command line interface (Windows: Windows-Key + R -> Type `Cmd.exe`, press enter, Ubuntu: CTRL + SHIFT + T, MacOs: search for `Terminal`) and navigate to the location where you saved your Java Code with:
     ```bash
     cd PATH_TO_YOU_FILE
     ```
@@ -250,10 +254,10 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
     ```
     **without the `cd` command**
 
-    ... to change to this mount point.
+    ... to change to this location.
 
-3. Type ```javac Hello.java``` and press enter
-4. Now the java code has been compiled to ```Hello.class``` which you can run from within your terminal with:
+4. Type ```javac Hello.java``` and press enter
+5. Now the java code has been compiled to ```Hello.class``` which you can run from within your terminal with:
     ```java
     java Hello
     ```
