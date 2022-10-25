@@ -3,7 +3,7 @@
     - [Install Java 11](#install-java-11)
       - [Install Java 11 on Windows](#install-java-11-on-windows)
       - [Install Java 11 on MacOS](#install-java-11-on-macos)
-      - [Install Java 11 on Ubuntu Linux](#install-java-11-on-ubuntu-linux)
+      - [Install Java 17 on Ubuntu Linux](#install-java-17-on-ubuntu-linux)
     - [Install Eclipse](#install-eclipse)
       - [Install Eclipse on Windows](#install-eclipse-on-windows)
       - [Install Eclipse on MacOS](#install-eclipse-on-macos)
@@ -83,13 +83,13 @@ You can chose whatever IDE you prefer.
 3. Verify that java has been installed successfully by running the command `java -version` in your MacOS **Terminal** command line interface:
 ![](images/38_macos_adoptopenjdk_4.png)
 
-#### Install Java 11 on Ubuntu Linux
+#### Install Java 17 on Ubuntu Linux
 
 1. Open a terminal with **CTRL + ALT + T**
 2. Run the following command:
 
     ```bash
-    sudo apt install default-jdk openjfx
+    sudo apt install openjdk-17-jdk
     ```
 
 ### Install Eclipse
