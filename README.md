@@ -1,180 +1,150 @@
 # Software Engineering 1
 
-## Setup your development environment: Java 17, Eclipse and vscode Tutorial
+## Course 00 - Setup
 
 For the following courses you need to have
 
 1) **Java 17** installed on your computer
-2) **Eclipse** installed on your computer (alternatively vscode + maven, but for beginners we recommend Eclipse)
+2) **VsCode** installed on your computer
+3) **Maven** installed on your computer
+
+### Install Java 17, Maven and Visual Studio Code for the Home-Office
+
+***IMPORTANT: SKIP THIS STEP IF YOU ARE CODING ON A COMPUTER OF THE UNIVERSITY OF APPLIED SCIENCES DUESSELDORF RIGHT NOW!!!***
 
 <details>
-<summary> CLICK TO VIEW THE SETUP TUTORIAL </summary>
+<summary>WINDOWS</summary>
 
-### Install Java 17
+- Winget for Windows 10 users: [LINK](https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1#activetab=pivot:overviewtab) (winget is installed in Windows 11 by default)   
+- Java Open JDK 17
+  - Either via installer: [Adoptium Open JDK installer](https://adoptium.net/)
+  - Or via winget (system-wide by default):
+      ```powershell
+      winget install EclipseAdoptium.Temurin.17.JDK
+      ```
+- Visual Studio Code
+  - Either via installer: [Visual Studio Code Installer](https://code.visualstudio.com/)
+    1) Download the vscode installer [from the official website.
+      ](https://code.visualstudio.com/)
 
-**Disclaimer: the exact Java 17 version number may be higher than the version number in the screenshots - but it needs to be Java 17, not 11, not 8 or 14 or higher**
+      ![](images/48_download_vscode_installer.png)
 
-#### Install Java 17 on Windows
+    2) Locate the vscode installer on your computer (for example in Downloads)
+       
+       ![](images/49_find_vscode_installer.png)
 
-1. Open https://adoptium.net/  in your browser
-2. Download the installer
-![01_download_adopt_openjdk](images/01_download_adopt_openjdk.png)
-![](images/01_download_adopt_openjdk_to_downloads.png)
-3. and start the installer
-![](images/01_run_.png)
+    3) Run the vscode installer
+       
+       ![](images/50_run_vscode_installer_01.png)
 
-    ... sometimes you need to click "OK" for the installtion warning
+       ![](images/51_run_vscode_installer_02.png)
 
-    ![01_2_warning](images/01_2_download_adopt_openjdk_warning.png)
+       ![](images/52_run_vscode_installer_03.png)
 
-4. Click through the adoptium open JDK wizard:  
-![02_openjdk_installer_1](images/02_openjdk_installer_1.png)
-![04_openjdk_installer_3](images/04_openjdk_installer_3.png)
-![5_openjdk_installer_4](images/05_openjdk_installer_4.png)
-![06_openjdk_installer_5](images/06_openjdk_installer_5.png)
-![07_openjdk_installer_6](images/07_openjdk_installer_6.png)
-(the name might have changed to "Adoptium Open JDK")
-![08_openjdk_installer_7](images/08_openjdk_installer_7.png)
+       ![](images/53_run_vscode_installer_04.png)
 
+       ![](images/54_run_vscode_installer_05.png)
 
-5. Verify that java has been installed successfully by running the command `java --version` in your Windows command line interface, the exact version may be different at the time you run this command:
-![09_verify_java_1](images/09_verify_java_1.png)
-![10_verify_java_2](images/10_verify_java_2.png)
-![11_verify_java_3](images/11_verify_java_3.png)
+       ![](images/55_run_vscode_installer_06.png)
+  - Or with winget system-wide:  
+    ```
+    winget install Microsoft.VisualStudioCode --scope machine
+    ```
+  - Or with winget as a user-only installation:  
+    ```powershell
+    winget install Microsoft.VisualStudioCode
+    ```
+- [VSCode Java extension pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+- [VSCode Spring Boot extension pack](https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack)
+- Gluon Scene Builder
+  - Either via installer: [Gluon Scene Builder Installer](https://gluonhq.com/products/scene-builder)
+  - Or with winget (user only):
+      ```powershell
+      winget install Gluon.SceneBuilder
+      ```
+- [Maven](https://maven.apache.org/install.html)
+  - open powershell as administrator (right-click: open as administrator) and run:
+      ```powershell
+      Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+      ```
+  - Once the installation is completed, close the Powershell (Admin) or Terminal (Admin) and open it again and run:        
+      ```powershell
+      choco install maven
+      ```
+</details>
 
-#### Install Java 17 on MacOS
+<details>
+<summary>MACOS</summary>
 
-1. Open https://adoptium.net/  in your browser
-2. Download and run the adoptium open JDK 17 installation wizard
-![](images/35_macos_adoptopenjdk_1.png)
-![](images/36_macos_adoptopenjdk_2.png)
-![](images/37_macos_adoptopenjdk_3.png)
-3. Verify that java has been installed successfully by running the command `java -version` in your MacOS **Terminal** command line interface:
-![](images/38_macos_adoptopenjdk_4.png)
-
-#### Install Java 17 on Ubuntu Linux
-
-1. Open a terminal with **CTRL + ALT + T**
-2. Run the following command:
-
-    ```bash
-    sudo apt install openjdk-17-jdk
+- Homebrew (If wanted)
+  - If wanted you can use homebrew to complete the following installation steps. [Homebrew](https://brew.sh) is a unofficial package manager for macOS, which should help you with installing new software on your system. To get started with homebrew just paste the following command inside your terminal window:
+    ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
 
-### Install Eclipse
-
-#### Install Eclipse on Windows
-
-1. Download the Eclipse installer from [the official Eclipse website](https://www.eclipse.org/downloads/packages/installer) for Windows
-
-    ![](images/12_download_eclipse_installer.png)
-
-2. Run the Eclipse installer from your Windows Explorer:
-
-    ![](images/13_run_eclipse_installer_1.png)
-
-2. Click through the installer to install Eclipse:
-
-    ![](images/14_run_eclipse_installer_2.png)
-
-    ![](images/15_run_eclipse_installer_3.png)
-
-    ![](images/16_run_eclipse_installer_4.png)
-    
-    ![](images/17_run_eclipse_installer_5.png)
-
-
-
-#### Install Eclipse on MacOS
-
-1. Download the Eclipse installer from [the official Eclipse website](https://www.eclipse.org/downloads/) for MacOs
-   
-    ![](images/39_macos_eclipse_1.png)
-
-2. Open the Eclipse .dmg from your downloads
-
-    ![](images/41_macos_eclipse_3.png)
-
-3. Confirm opening
-
-    ![](images/42_macos_eclipse_4.png)
-
-4. Click on **Eclipse IDE for Java Developers**
-    
-    ![](images/43_macos_eclipse_5.png)
-
-5. Follow the installer to finish installation
-    
-    ![](images/44_macos_eclipse_6.png)
-
-#### Install Eclipse on Ubuntu Linux
-
-If you like you can also run the Eclipse installer wizard on Ubuntu linux from https://www.eclipse.org/downloads/packages/installer or ...
-
-1. Open a terminal with **CTRL + ALT + T**
-2. Run the following command:
-
-    ```bash
-    sudo snap install eclipse --classic --edge
+- Java Open JDK 17
+  - Either via installer: [Adoptium Open JDK installer](https://adoptium.net/)
+  - Or via brew:
     ```
+    brew install --cask temurin
+    ```
+- Visual Studio Code
+  - Either via installer: [Visual Studio Code Installer](https://code.visualstudio.com/)
+    1. Download the vscode App [from the official website.](https://code.visualstudio.com/)
+    ![VSCode Download macOS](images/macos_vscode_install_1.png)
 
-### Install Visual Studio Code (vscode)
+    2. Install the app on your system. Simply drag and drop the downloaded `*.app` file into your Applications folder.
+    ![VSCode Install macOS](images/macos_vscode_install_2.png)
+  - Or via brew:  
+    ```
+    brew install --cask visual-studio-code
+    ```
+- [VSCode Java extension pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+- [VSCode Spring Boot extension pack](https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack)
+- Gluon Scene Builder
+  - Either via installer: [Gluon Scene Builder Installer](https://gluonhq.com/products/scene-builder)
+  - Or via brew:
+    ```
+    brew install --cask scenebuilder
+    ```
+- Maven
+  - Either manually using these setup instructions: [Maven - Installing](https://maven.apache.org/install.html)
+  - Or via brew:
+    ```
+    brew install maven
+    ```
+</details>
 
-**IMPORTANT**: for Software Engineering **1** we recommend to use Eclipse, even though vscode is a much faster and more modern IDE/editor. However if you insist on using it, here is how to install it.
 
-#### Windows
+<details>
+<summary>UBUNTU</summary>
 
-1) Download the vscode installer [from the official website.
-  ](https://code.visualstudio.com/)
+- Java Open JDK 17
+  ```bash
+  sudo apt install openjdk-17-jdk
+  ```
+- Visual Studio Code
+  - Either via installer: [Visual Studio Code Installer](https://code.visualstudio.com/)
+  - Or via snap:  
+    ```bash
+    sudo snap install code --classic
+    ```
+- [VSCode Java extension pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+- [VSCode Spring Boot extension pack](https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack)
+- Gluon Scene Builder
+  - via installer: [Gluon Scene Builder Installer](https://gluonhq.com/products/scene-builder)
+  - or via terminal:
+    ```bash
+    wget https://download2.gluonhq.com/scenebuilder/17.0.0/install/linux/SceneBuilder-17.0.0.deb
+    sudo dpkg -i SceneBuilder-17.0.0.deb
+    ```
+- [Maven](https://maven.apache.org/install.html) 
+  ```bash
+  sudo apt install maven
+  ```
+</details>
 
-  ![](images/48_download_vscode_installer.png)
-
-2) Locate the vscode installer on your computer (for example in Downloads)
-   
-   ![](images/49_find_vscode_installer.png)
-
-3) Run the vscode installer
-   
-   ![](images/50_run_vscode_installer_01.png)
-
-   ![](images/51_run_vscode_installer_02.png)
-
-   ![](images/52_run_vscode_installer_03.png)
-
-   ![](images/53_run_vscode_installer_04.png)
-
-   ![](images/54_run_vscode_installer_05.png)
-
-   ![](images/55_run_vscode_installer_06.png)
-
-#### MacOS
-
-##### Install via Installer
-
-1. Download the vscode App [from the official website.
-  ](https://code.visualstudio.com/)
- ![VSCode Download macOS](images/macos_vscode_install_1.png)
-
-2. Install the app on your system. Simply drag and drop the downloaded `*.app` file into your Applications folder.
- ![VSCode Install macOS](images/macos_vscode_install_2.png)
-
-##### Install using Homebrew (for the advanced user)
-
-[Homebrew](https://brew.sh/) is an **unofficial**, free and open-source package manager for macOS. Once Homebrew is installed inside your terminal, go ahead and run the following command:
-
-```sh
-brew install --cask visual-studio-code
-```
-
-#### Ubuntu
-
-Open a new terminal with ```CTRL + SHIFT + T``` and run the following command to instal vscode:
-
-```bash
-sudo snap install code --classic
-```
-
-### Setup vscode
+### Setup VsCode
 
 1) Click on the "Extension" Icon in the left panel
    
@@ -186,10 +156,6 @@ sudo snap install code --classic
    
    ![](images/58_setup_vscode_03.png)
 
-3) (Optional) search for `spring boot extension pack` in the search field click on the first entry (NOTE: check that the distributor is PIVOTAL and no-one else) and click on the `Install` button to installer the extension pack. Wait until all extensions are installed.
-   
-   ![](images/install_spring_boot_extension_pack.png)
-
 
 ### How-to use vscode for Java development
 
@@ -200,7 +166,6 @@ sudo snap install code --classic
 #### Create a maven project
 
 ![](images/vscode_maven_java_app.gif)
-</details>
 
 ______
 
@@ -262,119 +227,64 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
     java Hello
     ```
 
-#### Task 2 - Hello World Eclipse tutorial
+#### Task 2 - Basic Java App
 
-1. Open Eclipse
-2. Click on `Tutorials` -> `Create a Hello World application`
+1. Create a new Java Project without build tools by...
 
-    ![](images/19_eclipse_hello_world_1.png)
-    ![](images/19_eclipse_hello_world.png)
+    EITHER clicking on the "Create Java project" button in the explorer view of VsCod *(considering you have no directory currently opened, otherwise this button won't show up)*, selecting "No builds tools", choosing a directory to create the project in and name it `se1c1`
 
-3. Follow the guide on the right side of your screen to create the Hello World application and run it.
+    ![](images/vscode_simple_java_app.gif)
 
-**ATTENTION!!!**
+    OR by opening the VsCode command palette and typing  *Java: Create Java Project*, selecting "No builds tools", choosing a directory to create the project in and name it `se1c1`
 
-In the following frame, click on ***Don't Create***, to skip the module description.
+    ![](images/command_palette.png)
 
-![](images/34_do_not_create_module.png)
+2. VsCode should have created the file `App.java` for you
+3. Change `App.java` to include
+   1. a `main` Method (should be already inside)
+   2. inside the `main` method
+      1. create the variable `eineZahl` of the type `int`
+      2. create the variable `nochEineZahl` of the type `int`
+      3. create the variable `eineKommaZahl` of the type `double`
+      4. create the variable `eineZeichenKette` of the type `String`
+   3. outside of the `main` method, but inside `App`
+      1. a `static` method `addieren` with two parameters (also called "arguments") of the type `int`, for example `a` and `b`, that returns the addition of `a` and `b`
+      2. a `static` method `dividieren` with two parameters of the type `double`, for example `a` and `b`, that returns `a` divided by `b`
+   4. call `addieren` with `a:eineZahl` and `b:nochEineZahl` and save the result in the variable `summe`
+   5. call `dividieren` with `a:eineKommaZahl` and `b:summe` and save the result in the variable `quotient`
+   6. Use the method `System.out.println` to print out `eineZeichenKette + quotient` to the integrated terminal in VsCode
+   8. Explain why `addieren` and `dividieren` need to be declared as `static`
+   9. (OPTIONAL) Change `addieren` the arguments to `int... zahlen`, declare and initialize the variable `int summme = 0` inside the method body of `addieren` and iterate of the provided arguments with a for-loop to add each argument to `summe` and finally return `summe` at the end
 
-#### Task 3 - JavaFX graphical user interface app
-
-1. Click on `Create a project...` (**not** `Create a Java project`!!!), expand the the directory `Maven` and select `Maven project` - then click on `Next >`
-
-    ![](images/23_eclipse_new_maven.png)
-
-2. Leave everything as it is and click on `Next`
-
-   ![24_eclipse_new_maven_02](images/24_eclipse_new_maven_02.png) 
-
-3. Click in the search filter, type `javafx`, scroll to the end and select `javafx-archetype-simple` from `org.openjfx`
-
-    ![](images/25_eclipse_new_maven_03.png)
-
-4. Enter the Group id `org.hsd.inflab`, Artifact Id `se1c1`
-
-    ![](images/26_eclipse_new_maven_04.png)
-
-5. Open the package `src/main/java`, right-click `App.java` -> hover on `Run as` click on `Java Application`
-
-    ![](images/26_eclipse_new_maven_05.png)
-
-6. Replace the the ***whole*** code in `App.java` with the following code to create a window with a button that prints `Hello Java!` to the terminal when you click it:
-    ```java
-    package org.hsd.inflab.se1c1;
-
-    import javafx.application.Application;
-    import javafx.scene.Scene;
-    import javafx.scene.control.Button;
-    import javafx.scene.layout.BorderPane;
-    import javafx.stage.Stage;
-
-    public class App extends Application {
-
-        @Override
-        public void start(Stage stage) {
-
-            BorderPane borderPane = new BorderPane();        
-
-            String message = "Hello Java!";
-            Button button = new Button("Say: " + message);
-            button.setOnAction((event) -> {
-                System.out.println(message);
-            });
-
-            borderPane.setCenter(button);
-            
-            Scene scene = new Scene(borderPane, 400, 400);
-            stage.setScene(scene);
-            stage.show();
-        }
-
-        public static void main(String[] args) {
-            launch(args);
-        }
-
-    }
-    ```
-
-7. Run your `App.java` again
-   
-![javafx_hello_world](images/20_eclipse_javafx_hello_world.png)
-
-## Course 02
+## Course 02: Calculator
 
 ### Tasks
+1. Create a new java project without build tools like in [Course 01, Task 2](#task-2---basic-java-app)
+2. Copy the code of `App.java` of [Course 01, Task 2](#task-2---basic-java-app) into your new `App.java`
+3. (OPTIONAL) Additionally, add the following `static` methods inside `App`
+   1. multiplizieren
+   2. sin(x)
+   3. x^y
+4. Display a menu to the terminal which displays one option for each of your methods. For example:
+    ``````
+    CALCULATOR - please select:
+    0: Programmende
+    1: addieren
+    2: dividieren
+    3: multiplizieren
+    4: sin(x)
+    5: x^y
+    ``````
+5. Read in user input in the terminal
+6. Display what parameters should now be provided by the user
+7. Read in user input for each parameter the selected methods requires  (if you improved the parameters in `addieren` to `int... zahlen` you need to define a "stop" character like `s` for stop)
+8. Run the selected method and display the result in the terminal
 
-1. Create the ***Java*** project `se1c2`
-2. Inside the project `se1c2` create the new class `FourOutOfSixCoins` and within implement the following:
-    - There are four coins
-    - Each coin has a value between 1 and 6
-    - Print out each possible combination in the terminal
-    - Print out the total number of combinations in the terminal
-3. (OPTIONAL) Inside the project `se1c2` create the application ```VariableCoins``` and within implement the following:
-   - Set global integer variables ```AMOUNT_OF_COINS``` and ```COIN_MAX_VALUE```
-   - There are ```AMOUNT_OF_COINS``` coins
-   - Each coin has a value between 1 and ```COIN_MAX_VALUE```
-   - Print out each possible combination in the terminal
-   - Print out the total number of combinations in the terminal
+## Course 03 - OOP Intro
 
-**Permutations do not have to be included in the calculation!**
+*Note: (Currently German only)*
 
-Example output:
-```
-...
-[4, 2, 3, 1]
-[1, 2, 3, 5]
-[6, 2, 1, 3]
-[1, 2, 5, 4]
-...
-...
-...
-```
-
-## Course 03 (Currently German only)
-
-### Topic: "Einstieg in die Objektorientierung"
+### Overview: "Einstieg in die Objektorientierung"
 Die Klassen Kfz und Lkw werden erstellt, wobei die
 Grundprinzipien der Objektorientierung sukzessive einfließen. Dies bedeutet, dass wir mit
 einer "schlechten" Klasse KfzV0 anfangen und diese ständig verbessern, bis wir schließlich
@@ -385,7 +295,6 @@ Verfügung stellen.
 Die Demo-Klassen sollen genutzt werden, um einzelne Instanzen der Kfz Klassen zu
 erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
 
-### Tasks:
 1. Erstellen Sie das neue **Java Projekt** `se1c3`.
 2. Erstellen Sie sukzessive (nacheinander) die Klassen ``KfzV0``, ``Kfz`` und ``Lkw``:
    - Implementieren Sie die Klasse ``KfzV0`` mit den öffentlichen Integer-Attributen
@@ -433,6 +342,9 @@ Java FX Graphical user interface (GUI) visualizing a lottery drawing.
 ### Tasks
 
 1. Create the Maven project ```se1c4``` by using the archetype `javafx-archetype-simple` from `org.openjfx` to create a **JAVA FX** (not Swing!) appliction
+
+    ![](images/vscode_maven_java_app.gif)
+
 2. Extend the Code in `App.java` and create a GUI which consists of 6 [TextField](https://openjfx.io/javadoc/17/javafx.controls/javafx/scene/control/TextField.html)'s and one "Draw" [Button](https://openjfx.io/javadoc/17/javafx.controls/javafx/scene/control/Button.htmll). Fill the `TextField`s with random numbers between 1 and 49 via ```Math.random()```.
 3. Extend the application with the following features:
     - No number is drawn more than 1 time
