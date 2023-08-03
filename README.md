@@ -333,11 +333,11 @@ erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
     - Weisen Sie der zusätzlichen Referenz-Variable ``kfz`` der Klasse Kfz (keine Instanziierung)
     nacheinander ``sportWagen`` und ``magirus`` zu und geben Sie jeweils den Verbrauch auf 252 km aus.
     
-## Course 04
+## Course 04 - JavaFX Calculator
 
 ### Topic
 
-Java FX Graphical user interface (GUI) visualizing a lottery drawing.
+A calculator app made with JavaFX.
 
 ### Tasks
 
@@ -345,9 +345,30 @@ Java FX Graphical user interface (GUI) visualizing a lottery drawing.
 
     ![](images/vscode_maven_java_app.gif)
 
-2. Extend the Code in `App.java` and create a GUI which consists of 6 [TextField](https://openjfx.io/javadoc/17/javafx.controls/javafx/scene/control/TextField.html)'s and one "Draw" [Button](https://openjfx.io/javadoc/17/javafx.controls/javafx/scene/control/Button.htmll). Fill the `TextField`s with random numbers between 1 and 49 via ```Math.random()```.
-3. Extend the application with the following features:
-    - No number is drawn more than 1 time
-    - All numbers are sorted ascending from left to right
+2. add the following dependency to your `pom.xml` file:
+   
+    ```xml
+    <dependency>
+        <groupId>net.objecthunter</groupId>
+        <artifactId>exp4j</artifactId>
+        <version>0.4.8</version>
+    </dependency>
+    ```
+3. Add the following line to your `module-info.java`
 
-![lotto](images/21_lotto.png)
+    ```
+    requires exp4j;
+    ```
+4. Create a calculator UI inside `App.java` with the following JavaFX UI classes:
+   1. `Button`
+   2. `TextField`
+   3. `GridPane`
+   4. `BorderPane`
+5. Make sure you import the **correct* UI classes from JavaFX! Not from AWT or Swing!
+6. Use `ExpressionBuilder` and `Expression` to calculate the result and display it in the UI
+
+### Possible result
+
+*Note: (feel free to adapt and improve the design or add more buttons)*
+
+![](images/calc.png)
