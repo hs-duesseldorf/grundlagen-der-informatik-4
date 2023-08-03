@@ -371,4 +371,4 @@ A calculator app made with JavaFX.
 
 *Note: (feel free to adapt and improve the design or add more buttons)*
 
-![](images/calc.png)
+![](images/calc.gif)
