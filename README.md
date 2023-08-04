@@ -250,9 +250,12 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
    3. outside of the `main` method, but inside `App`
       1. a `static` method `addieren` with two parameters (also called "arguments") of the type `int`, for example `a` and `b`, that returns the addition of `a` and `b`
       2. a `static` method `dividieren` with two parameters of the type `double`, for example `a` and `b`, that returns `a` divided by `b`
+      3. a `static` method `ggt` (größter, gemeinsamer Teiler) that calculates the greatest common divisor of the two `int` variables `a` and `b`
+         1. constraint: use recursion
    4. call `addieren` with `a:eineZahl` and `b:nochEineZahl` and save the result in the variable `summe`
    5. call `dividieren` with `a:eineKommaZahl` and `b:summe` and save the result in the variable `quotient`
    6. Use the method `System.out.println` to print out `eineZeichenKette + quotient` to the integrated terminal in VsCode
+   7. call `ggt` with `a:eineZahl` and `b:nochEineZahl` and use `System.out.println` to print the result to the terminal
    8. Explain why `addieren` and `dividieren` need to be declared as `static`
    9. (OPTIONAL) Change `addieren` the arguments to `int... zahlen`, declare and initialize the variable `int summme = 0` inside the method body of `addieren` and iterate of the provided arguments with a for-loop to add each argument to `summe` and finally return `summe` at the end
 
@@ -296,42 +299,42 @@ Die Demo-Klassen sollen genutzt werden, um einzelne Instanzen der Kfz Klassen zu
 erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
 
 1. Erstellen Sie das neue **Java Projekt** `se1c3`.
-2. Erstellen Sie sukzessive (nacheinander) die Klassen ``KfzV0``, ``Kfz`` und ``Lkw``:
-   - Implementieren Sie die Klasse ``KfzV0`` mit den öffentlichen Integer-Attributen
-   ``sitze`` und ``tankInhalt`` und dem öffentlichen Float-Attribut `verbrauch`.
-3. Implementieren Sie das Programm KfzDemo.java mit einer main-Methode:
-   - Das Objekt ``minivan`` wird von der Klasse ``KfzV0`` erzeugt.
-   - Die Attribute werden mit ``sitze = 6``, ``tankInhalt = 70``, ``verbrauch = 14`` initialisiert.
+2. Erstellen Sie sukzessive (nacheinander) die Klassen `KfzV0`, `Kfz` und `Lkw`:
+   - Implementieren Sie die Klasse `KfzV0` mit den öffentlichen Integer-Attributen
+   `sitze` und `tankInhalt` und dem öffentlichen Float-Attribut `verbrauch`.
+3. Implementieren Sie das Programm `KfzDemo.java` mit einer main-Methode:
+   - Das Objekt `minivan` wird von der Klasse `KfzV0` erzeugt.
+   - Die Attribute werden mit `sitze = 6`, `tankInhalt = 70`, `verbrauch = 14` initialisiert.
    - Die mögliche Reichweite bei vollem Tank wird ausgerechnet und mit
-   ``System.out.println`` ausgegeben.
-4. Erstellen Sie ausgehend von ``KfzDemo.java`` die Klasse ``ZweiKfz.java``:
-   - Zusätzlich zum ``minivan`` Objekt wird ein Objekt ``sportwagen`` von der Klasse ``KfzV0`` erzeugt.
-   - Die Attribute von ``sportwagen`` werden mit ``sitze = 2``, ``tankInhalt = 45``, ``verbrauch = 11`` initialisiert.
-   - Die mögliche Reichweite von ``sportwagen`` bei vollem Tank wird ausgerechnet und mittels ``System.out.println`` ausgegeben.
-5. Erweitern Sie die Klasse ``KfzV0`` um die Methode ``reichweite()``, die die Reichweite als Rückgabewert liefert.
-6. Erstellen Sie ausgehend von `ZweiKfz.java` die Klasse ``ReturnDemo.java``:
+   `System.out.println` ausgegeben.
+4. Erstellen Sie die Datei `ZweiKfz.java` und kopieren sie den Inhalt von `KfzDemo.java` hinein, außerdem:
+   - Zusätzlich zum `minivan` Objekt wird ein Objekt `sportwagen` von der Klasse `KfzV0` erzeugt.
+   - Die Attribute von `sportwagen` werden mit `sitze = 2`, `tankInhalt = 45`, `verbrauch = 11` initialisiert.
+   - Die mögliche Reichweite von `sportwagen` bei vollem Tank wird ausgerechnet und mittels `System.out.println` ausgegeben.
+5. Erweitern Sie die Klasse `KfzV0` um die Methode `reichweite()`, die die Reichweite als Rückgabewert liefert.
+6. Erstellen Sie die Datei `ReturnDemo.java` und kopieren sie den Inhalt von `ZweiKfz.java` hinein, zusätzlich:
    - Die Ausgabe der Reichweite erfolgt in der main-Methode, wobei die Methode
    reichweite() genutzt wird.
-7. Die Klasse ``KfzV0`` wird um die Methode `spritVerbrauch(int km)` erweitert.
+7. Die Klasse `KfzV0` wird um die Methode `spritVerbrauch(int km)` erweitert.
    - Die Methode hat als Eingabeparameter eine Entfernung in Kilometern.
    - Sie berechnet den entsprechenden Spritverbrauch für die Entfernung.
    - Der Spritverbrauch wird als float-Ergebnis zurückgegeben.
-8. Erstellen Sie ausgehend von ``ReturnDemo.java`` die Klasse ``SpritDemo.java``:
+8. Erstellen Sie die Datei `SpritDemo.java` und kopieren Sie den Inhalt von `ReturnDemo.java` hinein, außerdem:
    - Die Methode spritVerbrauch wird in der main-Methode für die Entfernung 252 km aufgerufen und die Ergebnisse für die beiden Instanzen ausgegeben.
-9.  Erstellen Sie ausgehend von ``KfzV0.java`` die Klasse ``Kfz``. Die neue Klasse ``Kfz`` wird um die Konstruktor-Methode ``Kfz(int sitze, int tankInhalt, float verbrauch)`` erweitert. Zusätzlich werden alle Attribute auf ``private`` gesetzt.
-10. Erstellen Sie ausgehend von ``SpritDemo.java`` die Klasse ``KonstruktorDemo.java``:
-    - Die Attribute werden über den Konstruktor ``Kfz`` initialisiert.
-11.  Die Klasse Lkw wird von ``Kfz`` abgeleitet (Vererbung):
-    - Sie hat die beiden zusätzlichen Attribute ``int ladeFlaeche`` und ``boolean hatAnhaenger``.
-    - Der Konstruktor ``Lkw`` initialisiert alle Attribute.
-    - Die Lkw-Methode ``spritVerbrauch`` addiert immer einen Liter zum errechneten Verbrauch hinzu.
-12. Implementieren Sie das Programm ``LkwDemo.java`` mit:
-    - Einem Objekt ``sportWagen`` der Klasse ``Kfz`` und ein Objekt ``magirus`` der Klasse
-    ``Lkw``.
+9.  Erstellen Sie die Klasse `Kfz` und kopieren Sie den Inhalt von `KfzV0.java` hinein. Die neue Klasse `Kfz` wird um die Konstruktor-Methode `Kfz(int sitze, int tankInhalt, float verbrauch)` erweitert. Zusätzlich werden alle Attribute auf `private` gesetzt.
+10. Erstellen Sie die Datei `KonstruktorDemo.java` und kopieren Sie den Inhalt von `SpritDemo.java` hinein, außerdem:
+    - Die Attribute werden über den Konstruktor `Kfz` initialisiert.
+11.  Die Klasse Lkw wird von `Kfz` abgeleitet (Vererbung):
+    - Sie hat die beiden zusätzlichen Attribute `int ladeFlaeche` und `boolean hatAnhaenger`.
+    - Der Konstruktor `Lkw` initialisiert alle Attribute.
+    - Die Lkw-Methode `spritVerbrauch` addiert immer einen Liter zum errechneten Verbrauch hinzu.
+12. Implementieren Sie das Programm `LkwDemo.java` mit:
+    - Einem Objekt `sportWagen` der Klasse `Kfz` und ein Objekt `magirus` der Klasse
+    `Lkw`.
     - Das magirus-Objekt hat die gleichen Attribute wie das sportwagen-Objekt (nur
     zur Demo).
-    - Weisen Sie der zusätzlichen Referenz-Variable ``kfz`` der Klasse Kfz (keine Instanziierung)
-    nacheinander ``sportWagen`` und ``magirus`` zu und geben Sie jeweils den Verbrauch auf 252 km aus.
+    - Weisen Sie der zusätzlichen Referenz-Variable `kfz` der Klasse Kfz (keine Instanziierung)
+    nacheinander `sportWagen` und `magirus` zu und geben Sie jeweils den Verbrauch auf 252 km aus.
     
 ## Course 04 - JavaFX Calculator
 
@@ -360,7 +363,10 @@ A calculator app made with JavaFX.
     requires exp4j;
     ```
 4. Create a calculator UI inside `App.java` with the following JavaFX UI classes:
-   1. `Button`
+   1. `HsdButton` extends `Button`
+      1. set the min width and size to 50
+      2. set the background color to be white
+      3. create the class inside a new file `HsdButton.java`
    2. `TextField`
    3. `GridPane`
    4. `BorderPane`
@@ -369,6 +375,6 @@ A calculator app made with JavaFX.
 
 ### Possible result
 
-*Note: (feel free to adapt and improve the design or add more buttons)*
+*Note: (feel free to adapt and improve the design, add more buttons or use css to improve the styling)*
 
 ![](images/calc.gif)
