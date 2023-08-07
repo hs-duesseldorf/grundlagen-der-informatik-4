@@ -364,14 +364,15 @@ A calculator app made with JavaFX.
     ```
 4. Create a calculator UI inside `App.java` with the following JavaFX UI classes:
    1. `HsdButton` extends `Button`
-      1. set the min width and size to 50
-      2. set the background color to be white
-      3. create the class inside a new file `HsdButton.java`
+      1. call the `super` constructor inside its constructor
+      2. set the min width and size to 50 inside its constructor
+      3. set the background color to be white inside its constructor
+      4. declare this `public` `class` inside a new file `HsdButton.java`
    2. `TextField`
    3. `GridPane`
    4. `BorderPane`
-5. Make sure you import the **correct* UI classes from JavaFX! Not from AWT or Swing!
-6. Use `ExpressionBuilder` and `Expression` to calculate the result and display it in the UI
+5. Make sure you import the *correct* UI classes from **JavaFX**! Not from AWT or Swing!!!
+6. Import and use `ExpressionBuilder` and `Expression` from `net.objecthunter` to calculate the result and display it in the UI
 
 ### Possible result
 
