@@ -231,22 +231,22 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
 
 1. Create a new Java Project without build tools by...
 
-    EITHER clicking on the "Create Java project" button in the explorer view of VsCod *(considering you have no directory currently opened, otherwise this button won't show up)*, selecting "No builds tools", choosing a directory to create the project in and name it `se1c1`
+    EITHER clicking on the "Create Java project" button in the explorer view of VsCode *(considering you have no directory currently opened, otherwise this button won't show up)*, selecting "No builds tools", choosing a directory to create the project in and naming it `se1c1`
 
     ![](images/vscode_simple_java_app.gif)
 
-    OR by opening the VsCode command palette and typing  *Java: Create Java Project*, selecting "No builds tools", choosing a directory to create the project in and name it `se1c1`
+    OR by opening the VsCode command palette (press CTRL+SHIFT+P, MacOS: CMD+SHIFT+P) and typing  *Java: Create Java Project*, selecting "No builds tools", choosing a directory to create the project in and naming it `se1c1`
 
     ![](images/command_palette.png)
 
-2. VsCode should have created the file `App.java` for you
+2. VsCode should have created the file `App.java` for you (if not, create it)
 3. Change `App.java` to include
    1. a `main` Method (should be already inside)
-   2. inside the `main` method
-      1. create the variable `eineZahl` of the type `int`
-      2. create the variable `nochEineZahl` of the type `int`
-      3. create the variable `eineKommaZahl` of the type `double`
-      4. create the variable `eineZeichenKette` of the type `String`
+   2. inside the `main` method declare the following variables and initialize them if a fitting value
+      1. `eineZahl` of the type `int`
+      2. `nochEineZahl` of the type `int`
+      3. `eineKommaZahl` of the type `double`
+      4. `eineZeichenKette` of the type `String`
    3. outside of the `main` method, but inside `App`
       1. a `static` method `addieren` with two parameters (also called "arguments") of the type `int`, for example `a` and `b`, that returns the addition of `a` and `b`
       2. a `static` method `dividieren` with two parameters of the type `double`, for example `a` and `b`, that returns `a` divided by `b`
