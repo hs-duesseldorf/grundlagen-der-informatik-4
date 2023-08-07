@@ -189,7 +189,7 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
 
 1. Create, compile and run a simple "Hello World" java application.
 2. Use the Eclipse "Hello World tutorial" to get used to Eclipse *Java* Projects.
-3. Create, compile and run a java application with a simple JavaFX graphical user interface with Eclipse via a *Maven* Project
+3. Create and run a simple Java App, utilizing functions (methods) and recursion.
 
 ### Tasks
 
