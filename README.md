@@ -1,4 +1,4 @@
-# Software Engineering 1
+# Hochschule Düsseldorf, FB EI, Grundlagen der Informatik 4
 
 ## Course 00 - Setup
 
