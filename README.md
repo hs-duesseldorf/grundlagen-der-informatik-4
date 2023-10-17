@@ -157,7 +157,7 @@ For the following courses you need to have
    ![](images/58_setup_vscode_03.png)
 
 
-### How-to use vscode for Java development
+### How-to use vscode for Java development (just for reference, proceed to Course 01!)
 
 #### Create a simple java project
 
