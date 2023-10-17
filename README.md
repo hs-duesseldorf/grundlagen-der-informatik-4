@@ -8,9 +8,7 @@ For the following courses you need to have
 2) **VsCode** installed on your computer
 3) **Maven** installed on your computer
 
-### Install Java 17, Maven and Visual Studio Code for the Home-Office
-
-***IMPORTANT: SKIP THIS STEP IF YOU ARE CODING ON A COMPUTER OF THE UNIVERSITY OF APPLIED SCIENCES DUESSELDORF RIGHT NOW!!!***
+### Install Java 17, Maven and Visual Studio Code for the Home-Office (skip if you are working on a HSD Computer!!!)
 
 <details>
 <summary>WINDOWS</summary>
@@ -144,7 +142,9 @@ For the following courses you need to have
   ```
 </details>
 
-### Setup VsCode
+<br>
+
+### Setup VsCode (do not skip this step!)
 
 1) Click on the "Extension" Icon in the left panel
    
