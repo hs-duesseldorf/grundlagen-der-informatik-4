@@ -156,20 +156,11 @@ For the following courses you need to have
    
    ![](images/58_setup_vscode_03.png)
 
-
-### How-to use vscode for Java development (just for reference, proceed to Course 01!)
-
-#### Create a simple java project
-
-![](images/vscode_simple_java_app.gif)
-
-#### Create a maven project
-
-![](images/vscode_maven_java_app.gif)
-
 ______
 
 **ATTENTION:** When you are inside the HSD laboratory room safe ALL your work on the `H:\` drive!!!
+
+______
 
 ## Course 01
 
