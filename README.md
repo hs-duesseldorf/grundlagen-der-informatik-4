@@ -156,13 +156,13 @@ For the following courses you need to have
    
    ![](images/58_setup_vscode_03.png)
 
-______
-
-**ATTENTION:** When you are inside the HSD laboratory room safe ALL your work on the `H:\` drive!!!
-
-______
-
 ## Course 01
+
+______
+
+**ATTENTION:** When you are inside the HSD laboratory room save ALL your work on the `H:\` drive!!!
+
+______
 
 <details>
 <summary> MacOS Users only - CLICK TO EXPAND </summary>
@@ -198,19 +198,11 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
         }
     }
     ```
-3. Open a command line interface (Windows: Windows-Key + R -> Type `Cmd.exe`, press enter, Ubuntu: CTRL + SHIFT + T, MacOs: search for `Terminal`) and navigate to the location where you saved your Java Code with:
+3. Open a command line interface (Windows: `Powershell` or `Terminal` - *NOT* `cmd.exe`, Ubuntu: CTRL + SHIFT + T, MacOs: search for `Terminal`) and navigate to the location where you saved your Java Code with:
+
     ```bash
     cd PATH_TO_YOU_FILE
     ```
-
-    NOTE: For Windows drives like `C:` or `H:` you just enter...
-
-    ```
-    H:
-    ```
-    **without the `cd` command**
-
-    ... to change to this location.
 
 4. Type ```javac Hello.java``` and press enter
 5. Now the java code has been compiled to ```Hello.class``` which you can run from within your terminal with:
@@ -219,6 +211,8 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
     ```
 
 #### Task 2 - Basic Java App
+
+*GENERAL NOTE*: While developing in VsCode, please check red squiggle lines and/or the "PROBLEMS" tab for any compilation errors or linter warnings. Often you can use the "Quick Fix" in the context menu (mouse over or `CTRL` + `.`, MacOs: `CMD` + `.`).
 
 1. Create a new Java Project without build tools by...
 
