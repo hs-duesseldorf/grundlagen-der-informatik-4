@@ -10,7 +10,7 @@ For the following courses you need to have
 
 ... which are already installed on ***our*** computers in our HSD laboratory!!!
 
-##### Are you working on your ***own*** computer? Then install Java 17, Maven and Visual Studio Code for the:
+##### Are you working on your ***own*** computer? Then install Java 17, Maven and Visual Studio Code:
 
 <details>
 <summary>WINDOWS</summary>
