@@ -8,7 +8,9 @@ For the following courses you need to have
 2) **VsCode** installed on your computer
 3) **Maven** installed on your computer
 
-### Install Java 17, Maven and Visual Studio Code for the Home-Office (skip if you are working on a HSD Computer!!!)
+... which are already installed on ***our*** computers in our HSD laboratory!!!
+
+##### Are you working on your ***own*** computer? Then install Java 17, Maven and Visual Studio Code for the:
 
 <details>
 <summary>WINDOWS</summary>
