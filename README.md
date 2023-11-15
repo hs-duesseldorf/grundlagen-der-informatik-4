@@ -268,6 +268,7 @@ Please make sure to follow these steps to "downgrade" your TextEdit to save simp
 6. Display what parameters should now be provided by the user
 7. Read in user input for each parameter the selected methods requires  (if you improved the parameters in `addieren` to `int... zahlen` you need to define a "stop" character like `s` for stop)
 8. Run the selected method and display the result in the terminal
+9. Repeat the programm until the user presses 0, which should close all open resources and exit the program.
 
 ## Course 03 - OOP Intro
 
