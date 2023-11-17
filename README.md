@@ -362,6 +362,7 @@ A calculator app made with JavaFX.
    4. `BorderPane`
 5. Make sure you import the *correct* UI classes from **JavaFX**! Not from AWT or Swing!!!
 6. Import and use `ExpressionBuilder` and `Expression` from `net.objecthunter` to calculate the result and display it in the UI
+7. Explain verbally how you've built your user interface and why using and understanding maven ist important for Java applications.
 
 ### Possible result
 
