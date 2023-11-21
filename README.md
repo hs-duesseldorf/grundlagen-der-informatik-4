@@ -322,7 +322,7 @@ erzeugen. Diese sollen eine main-Methode enthalten und somit ausführbar sein.
     zur Demo).
     - Weisen Sie der zusätzlichen Referenz-Variable `kfz` der Klasse Kfz (keine Instanziierung)
     nacheinander `sportWagen` und `magirus` zu und geben Sie jeweils den Verbrauch auf 252 km aus.
-13. Beschreiben sie mündlich was eine Konstruktor Methode generell macht auch wenn Sie keine Werte initialisiert, was sie zurück gibt und wie sie mit diesem Rückgabewert machen können.
+13. Beschreiben sie mündlich was eine Konstruktor Methode generell macht auch wenn Sie keine Werte initialisiert, was sie zurück gibt und was sie mit diesem Rückgabewert machen können.
 
 
 ## Course 04 - JavaFX Calculator
