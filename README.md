@@ -352,9 +352,11 @@ A calculator app made with JavaFX.
     requires exp4j;
     ```
     
-   *INFO: the warning* 
-    `Name of automatic module 'exp4j' is unstable, it is derived from the module's file name.`
-   *can be IGNORED. (the package creator did not follow java module naming conventions)*
+   *INFO: the warning...*
+
+    ...`Name of automatic module 'exp4j' is unstable, it is derived from the module's file name.`...
+  
+   *...can be IGNORED (the package creator did not follow java module naming conventions)!*
     
 5. Create a calculator UI inside `App.java` with the following JavaFX UI classes:
    1. `HsdButton` extends `Button`
