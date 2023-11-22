@@ -351,7 +351,12 @@ A calculator app made with JavaFX.
     ```
     requires exp4j;
     ```
-4. Create a calculator UI inside `App.java` with the following JavaFX UI classes:
+    
+   *INFO: the warning* 
+    `Name of automatic module 'exp4j' is unstable, it is derived from the module's file name.`
+   *can be IGNORED. (the package creator did not follow java module naming conventions)*
+    
+5. Create a calculator UI inside `App.java` with the following JavaFX UI classes:
    1. `HsdButton` extends `Button`
       1. call the `super` constructor inside its constructor
       2. set the min width and size to 50 inside its constructor
@@ -360,9 +365,9 @@ A calculator app made with JavaFX.
    2. `TextField`
    3. `GridPane`
    4. `BorderPane`
-5. Make sure you import the *correct* UI classes from **JavaFX**! Not from AWT or Swing!!!
-6. Import and use `ExpressionBuilder` and `Expression` from `net.objecthunter` to calculate the result and display it in the UI
-7. Explain verbally how you've built your user interface and why using and understanding maven ist important for Java applications.
+6. Make sure you import the *correct* UI classes from **JavaFX**! Not from AWT or Swing!!!
+7. Import and use `ExpressionBuilder` and `Expression` from `net.objecthunter` to calculate the result and display it in the UI
+8. Explain verbally how you've built your user interface and why using and understanding maven ist important for Java applications.
 
 ### Possible result
 
